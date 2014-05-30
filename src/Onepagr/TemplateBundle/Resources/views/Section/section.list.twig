@@ -1,0 +1,27 @@
+<ul class="op-list">
+	<h1 itemprop="headline">{{ section.h1 }}</h1>
+	<p itemprop="summary">{{ section.p }}</p>
+	{% if section.list is defined %}
+	{% if section.list %}
+	{% for item in section.list %}
+	<li itemscope class="{{ section.colsize }}">
+		<i class="op-icon {{ item.i }}"></i>
+		<h1>{{ item.h1 }}</h1>
+		<h2>{{ item.h2 }}</h2>
+		<p itemprop="description">{{ item.p }}</p>
+	</li>
+	{% endfor %}
+	{% endif %}
+	{% endif %}
+</ul>
+
+<style>
+	ul.op-list {
+		list-style-type: none;
+	}
+
+	ul.op-list li {
+		list-style-type: none;
+		display: block;
+	}
+</style>

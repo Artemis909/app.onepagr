@@ -1,0 +1,44 @@
+{% extends 'OnepagrTemplateBundle::layout.html.twig' %}
+{% block body %}
+<!--
+<section class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<a href="https://twitter.com/onepagecreator" target="_blank" class="twitter pull-right"><i class="fa fa-twitter fa-2x"></i></a>
+	</div>
+</section>
+-->
+<section id="op-header-bg" class=""></section>
+<section id="op-header-gradient" class=""></section>
+<section id="op-header" class="container-fluid theme-showcase content gradient" role="main" id="top">
+	<div class="row content text-center center-block">
+		<p class="op-logo op-uploadable" id="op-logo">
+			<i class="fa fa-anchor fa-4x wow swing animated"></i>
+		</p>
+		<p class="op-text" key="text-1">
+			Introducing
+		</p>
+		<p class="op-text" key="text-2">
+			Anchor
+		</p>
+		<p class="op-text" class="text-3">
+			
+		</p>
+		<form role="form" class="col-lg-4 col-md-4 col-xs-10 centered text-center center-block">
+			<div class="form-group">
+				<label for="fullname" class="wow bounceInDown animated" data-wow-duration="0.2s">Your Full Name</label>
+				<input type="input" class="form-control" id="fullname" placeholder="">
+			</div>
+			<div class="form-group">
+				<label for="email" class="wow bounceInDown animated" data-wow-duration="0.4s">Your Email Address</label>
+				<input type="email" class="form-control" id="email" placeholder="">
+			</div>
+			<button type="submit" class="btn btn-default wow bounceInLeft animated" data-wow-duration="0.8s">Submit</button>
+		</form>
+	</div>
+</section>
+{% endblock %}
+{% block stylesheets %}
+{{ parent() }}
+<link href="{{ asset('bundles/onepagrtemplate/css/templates/header/header.operator.css') }}" rel="stylesheet" />
+
+{% endblock %}

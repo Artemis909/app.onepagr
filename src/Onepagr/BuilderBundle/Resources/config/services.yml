@@ -1,0 +1,7 @@
+parameters:
+#    onepagr_builder.example.class: Onepagr\BuilderBundle\Example
+
+services:
+#    onepagr_builder.example:
+#        class: %onepagr_builder.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

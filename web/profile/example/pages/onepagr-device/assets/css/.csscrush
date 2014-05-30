@@ -1,0 +1,53 @@
+{
+    "style.crush.css": {
+        "imports": [
+
+        ],
+        "datem_sum": 1401452984,
+        "options": {
+            "vars": {
+                "themeColor": "#2C82C9",
+                "name": "Happy Blue",
+                "bgColor1": "#2C82C9",
+                "bgImage": "..\/img\/mockups.svg",
+                "bgImage2": "..\/img\/fruit_1.jpg",
+                "bgColor2": "#363F48",
+                "fontColor1": "#fff",
+                "fontColor2": "#fff",
+                "fontColor3": "#000",
+                "fontColor4": "rgba(255,255,255,.65)",
+                "opacity": 0.85,
+                "borderRadius": "4px",
+                "border": "0",
+                "borderColor": "#fff",
+                "fontName": "Raleway",
+                "fontFamily": "'Raleway', sans-serif;"
+            },
+            "output_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/example\/pages\/onepagr-device\/assets\/css\/",
+            "asset_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/example\/pages\/onepagr-device\/assets\/img\/",
+            "output_file": "style.css",
+            "minify": true,
+            "formatter": null,
+            "versioning": true,
+            "boilerplate": true,
+            "cache": true,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "enable": null,
+            "disable": null,
+            "settings": [
+
+            ],
+            "stat_dump": false,
+            "trace": [
+
+            ],
+            "source_map": false,
+            "newlines": "use-platform",
+            "global_vars": [
+
+            ]
+        }
+    }
+}

@@ -1,0 +1,48 @@
+{
+    "style.crush.css": {
+        "imports": [
+
+        ],
+        "datem_sum": 1401114148,
+        "options": {
+            "vars": {
+                "themeColor": "#16a085",
+                "name": "Green Sea",
+                "bgColor1": "#16a085",
+                "bgImage": ".\/full\/11.png",
+                "bgColor2": "#fff",
+                "fontColor1": "#16a085",
+                "fontColor2": "#fff",
+                "fontColor3": "#000",
+                "fontColor4": "rgba(255,255,255,.65)",
+                "fontName": "Lato",
+                "fontFamily": "'Lato', sans-serif;"
+            },
+            "output_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/malickceesay\/pages\/showcase\/assets\/css\/",
+            "asset_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/malickceesay\/pages\/showcase\/assets\/img\/",
+            "output_file": "style.css",
+            "minify": true,
+            "formatter": null,
+            "versioning": true,
+            "boilerplate": true,
+            "cache": true,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "enable": null,
+            "disable": null,
+            "settings": [
+
+            ],
+            "stat_dump": false,
+            "trace": [
+
+            ],
+            "source_map": false,
+            "newlines": "use-platform",
+            "global_vars": [
+
+            ]
+        }
+    }
+}

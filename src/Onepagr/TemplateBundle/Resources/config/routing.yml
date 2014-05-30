@@ -1,0 +1,15 @@
+onepagr_template_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: OnepagrTemplateBundle:Default:index }
+onepagr_template_timeline:
+    pattern:  /timeline/{name}
+    defaults: { _controller: OnepagrTemplateBundle:Default:timeline }
+onepagr_template_header:
+    pattern:  /header/{name}
+    defaults: { _controller: OnepagrTemplateBundle:Default:header }
+onepagr_template_template:
+    pattern:  /{folder}/{name}
+    defaults: { _controller: OnepagrTemplateBundle:Default:template }
+onepagr_template_page:
+    pattern:  /page/{page}/{palette}
+    defaults: { _controller: OnepagrTemplateBundle:Default:page }

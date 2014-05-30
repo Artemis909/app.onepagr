@@ -1,0 +1,46 @@
+{
+    "header.book.template.crush.css": {
+        "imports": [
+
+        ],
+        "datem_sum": 1400943586,
+        "options": {
+            "vars": {
+                "themeColor": "#1abc9c",
+                "name": "Turquoise",
+                "bgColor1": "#1abc9c",
+                "bgImage": "..\/img\/book\/profile.png",
+                "bgColor2": "#fff",
+                "fontColor1": "#1abc9c",
+                "fontColor2": "#fff",
+                "fontColor3": "#000",
+                "fontColor4": "rgba(255,255,255,.65)"
+            },
+            "output_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/1234\/resume\/",
+            "boilerplate": false,
+            "minify": true,
+            "formatter": null,
+            "versioning": true,
+            "cache": true,
+            "output_file": null,
+            "asset_dir": null,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "enable": null,
+            "disable": null,
+            "settings": [
+
+            ],
+            "stat_dump": false,
+            "trace": [
+
+            ],
+            "source_map": false,
+            "newlines": "use-platform",
+            "global_vars": [
+
+            ]
+        }
+    }
+}

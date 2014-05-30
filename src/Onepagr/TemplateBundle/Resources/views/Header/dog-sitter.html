@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta section -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="media/logo/favicon.ico">
+
+        <title>Onepagr - One Page Website Builder | Explorer </title>
+        <meta name="Description" Content="One page website builder" />
+        <meta name="Keywords" Content="One page website builder, one page creator, Free, modular, snippets, free high resolution images, Free high resolution background, responsive" />
+        <meta name="language" content="en" />
+        <meta name="distribution" content="global" />
+        <meta name="rating" content="general" />
+        <!-- meta section end-->
+
+        <link href="web/bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Pacifico" media="screen" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
+        <link href="theme/default-head-libre-baskerville.css" rel="stylesheet">
+        <link href="theme/color.css" rel="stylesheet">
+        <link href="theme/button.css" rel="stylesheet">
+        <link href="theme/align.css" rel="stylesheet">
+        <link href="theme/explorer.css" rel="stylesheet">
+        <link href="web/animate.min.css" rel="stylesheet">
+		<link href="web/assets/builder/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />
+		<link href="web/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+
+		<link href="web/assets/builder/css/nav.css" rel="stylesheet" />
+
+        <!-- Custom styles for this template -->
+        <!--<link href="jumbotron.css" rel="stylesheet">-->
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body role="document">
+
+        <!-- Fixed navbar -->
+        <section class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+				
+                <a href="https://twitter.com/onepagecreator" target="_blank" class="twitter pull-right"><i class="fa fa-twitter fa-2x"></i></a>
+            </div>
+        </section>
+		<section id="op-header-bg" class="">
+		</section>
+		<section id="op-header-gradient" class=""></section>
+        <section id="op-header" class="container-fluid theme-showcase content gradient" role="main" id="top">
+
+            <a class="fa fa-2x fa-lo twitter"></a>
+        </section>
+		<!--Services section-->
+		<!--
+		<section class="section">
+
+			<div class="container op-rowable">
+				<div class="row op-row">
+					<div class="col-lg-4 col-md-4 op-col">
+						<h3 class="op-editable"><i class="fa fa-check-circle"></i> Bootstrap 3 Built</h3>
+						<p class="op-editable">The 'Modern Business' website template by <a href="http://startbootstrap.com">Start Bootstrap</a> is built with <a href="http://getbootstrap.com">Bootstrap 3</a>. Make sure you're up to date with latest Bootstrap documentation!</p>
+					</div>
+					<div class="col-lg-4 col-md-4 op-col">
+						<h3 class="op-editable"><i class="fa fa-pencil"></i> Ready to Style &amp; Edit</h3>
+						<p class="op-editable">You're ready to go with this pre-built page structure, now all you need to do is add your own custom stylings! You can see some free themes over at <a href="http://bootswatch.com">Bootswatch</a>, or come up with your own using <a href="http://getbootstrap.com/customize/">the Bootstrap customizer</a>!</p>
+					</div>
+					<div class="col-lg-4 col-md-4 op-col">
+						<h3 class="op-editable"><i class="fa fa-folder-open"></i> Many Page Options</h3>
+						<p class="op-editable">This template features many common pages that you might see on a business website. Pages include: about, contact, portfolio variations, blog, pricing, FAQ, 404, services, and general multi-purpose pages.</p>
+					</div>
+				</div>
+
+			</div>
+		
+
+		</section>
+		
+		<div id="color-palette">
+
+		</div>
+
+		<nav class="main-nav" id="app-nav">
+			<a href="" id="nav-sections" class=""><i class="fa fa-columns"></i>Section</a>
+			<a href="" id="nav-content" class=""><i class="fa fa-edit"></i>Content</a>
+			<a href="" id="nav-code" class=""><i class="fa fa-eye"></i>Media</a>
+			<a href="" id="nav-code" class=""><i class="fa fa-magic"></i>Theme</a>
+			<a href="" id="nav-code" class=""><i class="fa fa-eye"></i>Background</a>
+			<a href="" id="nav-code" class=""><i class="fa fa-play"></i>Animation</a>
+		</nav>
+		-->
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<script src="web/assets/builder/js/jquery-1.11.0.min.js"></script>
+
+		<!--<script src="web/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>-->
+		<script type="text/javascript">
+			$(function() {
+
+			});
+		</script>
+		<script id="color-thief-output-template" type="text/template">
+			<div class="function get-color">
+			<h3 class="function-title">Dominant Color</h3>
+			<div class="swatches">
+			<div class="swatch" style="background-color: rgb(<%= color[0] %>, <%= color[1] %>, <%= color[2] %>)"></div>
+			</div>
+
+			</div>
+			<div class="function get-palette">
+			<h3 class="function-title">Palette</h3>
+			<div class="function-output">
+			<div class="swatches">
+			<% _.each(palette, function(c) { %> 
+            <div class="swatch" style="background-color: rgb(<%= c[0] %>, <%= c[1] %>, <%= c[2] %>)"></div>
+			<% }); %>
+			</div>
+			</div>
+
+			</div>
+		</script>
+		<style type="text/css" id="header-style">
+
+		</style>
+
+	</body>
+</html>

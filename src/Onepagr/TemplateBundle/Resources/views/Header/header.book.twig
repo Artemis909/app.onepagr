@@ -1,0 +1,113 @@
+{% block opheader %}
+<section id="op-header-bg" class="">
+	<div class="col-md-6 op-profile">
+
+	</div>
+	<div class="col-md-6"></div>
+</section>
+<section id="op-header-gradient" class=""></section>
+<section id="op-header" class="container-fluid" role="main" id="top">
+	<div class="row">
+		<div class="col-md-6 summary">
+			<div class="content text-center">
+				<!--
+				<p><img data-src="holder.js/140x140" class="img-circle" alt="140x140" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNDAiIGhlaWdodD0iMTQwIj48cmVjdCB3aWR0aD0iMTQwIiBoZWlnaHQ9IjE0MCIgZmlsbD0iI2VlZSIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjcwIiB5PSI3MCIgc3R5bGU9ImZpbGw6I2FhYTtmb250LXdlaWdodDpib2xkO2ZvbnQtc2l6ZToxMnB4O2ZvbnQtZmFtaWx5OkFyaWFsLEhlbHZldGljYSxzYW5zLXNlcmlmO2RvbWluYW50LWJhc2VsaW5lOmNlbnRyYWwiPjE0MHgxNDA8L3RleHQ+PC9zdmc+" style="width: 140px; height: 140px;"></p>
+				-->
+				<p class="name">JAMES SMITH</p>
+				<p class="title">Creative Director</p>
+				<p>
+					<span class="phone"><abbr title="Phone">P: </abbr> <span>+44 07000000000</span></span>
+					<a class="email" href="mailto:paul.smith@onepagr.io">paul.smith@onepagr.io</a>
+				</p>
+				<p>
+				<ul class="footer centered center-block text-center wow animated fadeIn" data-wow-duration="5s" data-wow-delay="1s">
+					<li><a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+					<li><a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+					<li><a href="#" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a></li>
+				</ul>
+				</p>
+			</div>
+		</div>
+		<div class="col-md-6 op-bg-2 detail">
+			<ul>
+				<li>
+					<h1>
+						About Me
+					</h1>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+						Quisque tincidunt orci ac urna sollicitudin ultricies. 
+						Nullam in risus pharetra, tempus orci convallis, blandit orci. 
+						Suspendisse felis nisi, posuere ac luctus non, ultrices id lacus. 
+				</li>
+				<li>
+					<h1>Work Experience</h1>
+					<ul>
+						<li>
+							<h2>Creative Director - Company Name (2009 > Present)</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+								Quisque tincidunt orci ac urna sollicitudin ultricies. 
+								Nullam in risus pharetra, tempus orci convallis, blandit orci. 
+								Suspendisse felis nisi, posuere ac luctus non, ultrices id lacus. 
+
+							</p>
+						</li>
+						<li>
+							<h2>Creative Director - Company Name (2009 > Present)</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+								Quisque tincidunt orci ac urna sollicitudin ultricies. 
+								Nullam in risus pharetra, tempus orci convallis, blandit orci. 
+								Suspendisse felis nisi, posuere ac luctus non, ultrices id lacus. 
+
+							</p>
+						</li>
+					</ul>
+				<li>
+					<h1>Education</h1>
+					<ul>
+						<li>
+							<h2>BSC Computing - University Of Leicester (1999 > 2003)</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+								Quisque tincidunt orci ac urna sollicitudin ultricies.
+							</p>
+						</li>
+						<li>
+							<h2>Art School (1998 > 1999)</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+								Quisque tincidunt orci ac urna sollicitudin ultricies.
+							</p>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+<section id="footer" class="footer centered center-block text-center wow animated fadeIn" data-wow-duration="5s" data-wow-delay="1s" style="display: none">
+	<ul>
+		<li><a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+		<li><a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+		<li><a href="#" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a></li>
+	</ul>
+</section>
+
+<script src="{{ asset('bundles/onepagrtemplate/js/typed.js') }}"></script>
+<script src="{{ asset('bundles/onepagrtemplate/js/wow.min.js') }}"></script>
+<link href="{{ css }}" rel="stylesheet" />
+<style>
+
+</style>
+<script>
+$(function() {
+
+
+	new WOW().init();
+
+
+});
+</script>
+{% endblock %}

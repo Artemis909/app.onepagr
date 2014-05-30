@@ -1,0 +1,3 @@
+onepagr_builder_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: OnepagrBuilderBundle:Default:index }

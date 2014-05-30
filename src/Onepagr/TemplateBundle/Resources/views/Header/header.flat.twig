@@ -1,0 +1,63 @@
+{% block opheader %}
+<section id="op-header-bg" class=""></section>
+<section id="op-header-gradient" class=""></section>
+<section id="op-header" class="container-fluid theme-showcase content gradient" role="main" id="top">
+	<div class="row content text-center center-block">
+
+		<ul class="op-list op-hide" id="typed-strings" style="display:none">
+			<li>Hi</li>
+			<li>My name is James Smith</li>
+			<li>I am a twenty year old front-end web developer from St Albans, currently studying web design at Southampton Solent University</li>
+			<li>I'm currently available for freelance work</li>
+			<li>I'm also looking for a summer internship for July-September</li>
+			<li>You can reach me on me@jamessmitch.co.uk</li>
+			<li>Thank you</li>
+		</ul>
+		<div class="text-editor-wrap" data-wow-duration="5s">
+			<div class="title-bar"><span class="title">about-me.js — bash — 80x<span class="terminal-height">25</span></span></div>
+			<div class="text-body">
+				$ <span id="typed"></span>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="footer" class="footer centered center-block text-center wow animated fadeIn" data-wow-duration="5s" data-wow-delay="1s" style="display: none">
+	<ul>
+		<li><a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+		<li><a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+		<li><a href="#" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a></li>
+	</ul>
+</section>
+
+<script src="{{ asset('bundles/onepagrtemplate/js/typed.js') }}"></script>
+<script src="{{ asset('bundles/onepagrtemplate/js/wow.min.js') }}"></script>
+<link href="{{ asset('bundles/onepagrtemplate/css/templates/header/header.flat.css') }}" rel="stylesheet" />
+<style>
+
+</style>
+<script>
+$(function() {
+	var typedStrings = [];
+	$("#typed-strings li").each(function() {
+		typedStrings.push($(this).text());
+		console.log(typedStrings);
+		if ($(this).is(':last-child')) {
+			console.log(typedStrings);
+			$("#typed").typed({
+				strings: typedStrings,
+				typeSpeed: 30, // typing speed
+				backDelay: 0, // pause before backspacing
+				callback: function() {
+					$('#footer').show();
+					$(".text-body").css('height', '150px');
+				}
+			});
+		}
+	});
+
+	new WOW().init();
+
+
+});
+</script>
+{% endblock %}

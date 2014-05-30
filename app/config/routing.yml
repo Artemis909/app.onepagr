@@ -1,0 +1,13 @@
+onepagr_css:
+    resource: "@OnepagrCssBundle/Resources/config/routing.yml"
+    prefix:   /css
+onepagr_builder:
+    resource: "@OnepagrBuilderBundle/Resources/config/routing.yml"
+    prefix:   /builder
+
+onepagr_template:
+    resource: "@OnepagrTemplateBundle/Resources/config/routing.yml"
+    prefix:   /template
+
+
+

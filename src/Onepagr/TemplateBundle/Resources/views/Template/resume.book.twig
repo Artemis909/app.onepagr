@@ -1,0 +1,15 @@
+{% extends 'OnepagrTemplateBundle::layout.html.twig' %}
+{% block body %}
+	{% include "OnepagrTemplateBundle:Header:header.book.twig" %}
+{% endblock %}
+{% block footerscript %}
+{{ parent() }}
+<script src="//ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Raleway', 'Lato']
+    }
+  });
+</script>
+{% endblock %}

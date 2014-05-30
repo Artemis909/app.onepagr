@@ -1,0 +1,39 @@
+nav {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  padding: 0 0 0;
+  background: #262626;
+  z-index: 8;
+}
+nav a {
+  display: block;
+  padding: 18px 0 14px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #636363;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+  
+}
+
+nav a .fa {
+	display: block;
+	text-decoration: none;
+	margin-bottom: 10px;
+	font-size: 200%;
+}
+
+nav a:hover,
+nav a.open {
+  color: #c6c6c6;
+  background: #363636;
+  -webkit-transition: color 0.2s linear;
+  transition: color 0.2s linear;
+  text-decoration: none;
+}

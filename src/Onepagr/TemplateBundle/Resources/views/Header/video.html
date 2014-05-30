@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta section -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="media/logo/favicon.ico">
+
+        <title>Onepagr - One Page Website Builder | onepagr.io </title>
+        <meta name="Description" Content="One page website builder" />
+        <meta name="Keywords" Content="One page website builder, one page creator, Free, modular, snippets, free high resolution images, Free high resolution background, responsive" />
+        <meta name="language" content="en" />
+        <meta name="distribution" content="global" />
+        <meta name="rating" content="general" />
+        <!-- meta section end-->
+
+        <link href="web/bootstrap-3.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Pacifico" media="screen" rel="stylesheet" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css' />
+        <link href="theme/default-head-libre-baskerville.css" rel="stylesheet">
+        <link href="theme/color.css" rel="stylesheet">
+        <link href="theme/button.css" rel="stylesheet">
+        <link href="theme/align.css" rel="stylesheet">
+        <link href="theme/video.css" rel="stylesheet">
+        <link href="web/animate.min.css" rel="stylesheet">
+		<link href="web/assets/builder/css/jquery-ui-1.10.4.min.css" rel="stylesheet" />
+		<link href="web/font-awesome-4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+
+		<link href="web/assets/builder/css/nav.css" rel="stylesheet" />
+
+        <!-- Custom styles for this template -->
+        <!--<link href="jumbotron.css" rel="stylesheet">-->
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body role="document">
+		<!-- videos 
+		http://www.youtube.com/watch?v=t2YNZtjQiXs = free video background
+		http://www.youtube.com/watch?v=fv3oHudJ98M = free video backgrounds
+		http://www.youtube.com/watch?v=ARm5HtnKxHo&list=PLVsFsEEn_P3u8dRfyDTG1LTVnJtwG0p9G = free video backgrounds
+		https://www.youtube.com/watch?v=fdJc1_IBKJA
+		http://www.youtube.com/watch?v=xibbE06C-jU = Free
+		http://www.youtube.com/watch?v=cOl-VMgq3sY
+		
+  
+		-->
+
+		<section class="content-section video-section theme-showcase">
+			<div class="pattern-overlay">
+				<a id="bgndVideo" class="player" data-property="{videoURL:'http://www.youtube.com/watch?v=xibbE06C-jU',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+							<br /><br />
+							<p>
+								<i class="logo fa fa-video-camera fa-4x"></i><br />
+								<span class="logo-text">Onepagr</span>
+							</p>
+							<h3>Enjoy Adding Full Screen Videos to your Page Sections</h3>
+							<p>
+								<br /><br />
+								<a href="http://onepagr.io" class="btn btn-red btn-lg">Get Started</a>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+
+						<div class="col-lg-12 store-icons">
+							
+							<!-- apple store button -->
+							<a class="btn btn-lg btn-primary big-btn" href="#">
+								<i class="glyphicon glyphicon-phone pull-left"></i>
+								<div class="btn-text">
+									<small>Available on the</small><br><strong>App Store</strong>
+								</div>
+							</a>
+							<!-- android button -->
+							<a class="btn btn-lg btn-success big-btn android-btn" href="#">
+								<img width="80px" class="pull-left" src="http://www.userlogos.org/files/logos/jumpordie/google_play_04.png"><div class="btn-text"><small>Available on</small><br><strong>Google Play</strong></div></a>
+							<!-- windows store button -->
+							<a class="btn btn-lg btn-success big-btn windows-btn" href="#">
+								<img width="60px" class="pull-left" src="http://1.bp.blogspot.com/-rD2_M6Vvv6w/UbmywLq5V8I/AAAAAAAACko/BEcR4QqtkRI/s1600/Windows%2BStore%2BLogo.png"><div class="btn-text">Windows<br>Store</div></a>
+						
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script src="web/assets/builder/js/jquery-1.11.0.min.js"></script>
+		<script src="web/js/color.js"></script>
+		<script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+
+		<!--<script src="web/bootstrap-3.1.1-dist/js/bootstrap.min.js"></script>-->
+		<script type="text/javascript">
+			$(function() {
+				$(".player").mb_YTPlayer();
+
+				Function.prototype.bind = function(parent) {
+					var f = this;
+					var args = [];
+
+					for (var a = 1; a < arguments.length; a++) {
+						args[args.length] = arguments[a];
+					}
+
+					var temp = function() {
+						return f.apply(parent, args);
+					}
+
+					return(temp);
+				}
+
+				var overlaySelector = ".video-section .pattern-overlay";
+				var webColors = {
+					navy: {hex: '#001F3F', label: 'NAVY'},
+					blue: {hex: '#0074D9', label: 'BLUE'},
+					aqua: {hex: '#7FDBFF', label: 'AQUA'},
+					teal: {hex: '#39CCCC', label: 'TEAL'},
+					olive: {hex: '#3D9970', label: 'OLIVE'},
+					green: {hex: '#2ECC40', label: 'GREEN'},
+					lime: {hex: '#01FF70', label: 'LIME'},
+					yellow: {hex: '#FFDC00', label: 'YELLOW'},
+					orange: {hex: '#FF851B', label: 'ORANGE'},
+					red: {hex: '#FF4136', label: 'RED'},
+					maroon: {hex: '#85144B', label: 'MAROON'},
+					purple: {hex: '#B10DC9', label: 'PURPLE'},
+					fuchsia: {hex: '#F012BE', label: 'FUCHSIA'},
+					white: {hex: '#FFFFFF', label: 'WHITE'},
+					silver: {hex: '#DDDDDD', label: 'SILVER'},
+					grey: {hex: '#AAAAAA', label: 'GRAY'},
+					black: {hex: '#111111', label: 'BLACK'}
+				};
+
+
+				var animate = {
+					webColors: webColors,
+					key: 0,
+					next: function() {
+						if (typeof this._webColors[this.key] !== 'undefined') {
+							$return = this.webColors[this._webColors[this.key]];
+							this.key++;
+							return $return;
+						}
+						this.key = 1;
+						return this.webColors[this._webColors[0]];
+					},
+					start: function() {
+						this._webColors = new Array();
+						for (var key in this.webColors) {
+							this._webColors.push(key);
+						}
+						this.loop();
+					},
+					loop: function() {
+						var $color = this.next().hex;
+						console.log($color);
+						var color = Color($color);
+						var bgColor = color.rgbArray();
+						console.log(bgColor);
+						$(overlaySelector).css('background-color', 'rgba(' + bgColor[0] + ',' + bgColor[1] + ',' + bgColor[2] + ',' + '0.59)');
+						$('.contact-us').css('background-color', color.darken(0.5).hexString());
+						setTimeout(function() {
+							this.loop();
+						}.bind(this), 2000);
+					}
+				};
+
+				animate.start();
+
+			});
+		</script>
+
+
+	</body>
+</html>

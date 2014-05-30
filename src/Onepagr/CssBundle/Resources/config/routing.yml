@@ -1,0 +1,3 @@
+onepagr_css_homepage:
+    pattern:  /{name}
+    defaults: { _controller: OnepagrCssBundle:Default:index }

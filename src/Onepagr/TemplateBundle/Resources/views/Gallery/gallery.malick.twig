@@ -1,0 +1,16 @@
+<div class="op-title">
+	<h1>{{ gallery.h1|raw }}</h1>
+	<h3>{{ gallery.h2|raw }}</h3>
+</div>
+<div>
+	<ul id="og-grid" class="og-grid">
+		{% for item in gallery.items %}
+		<li>
+			<a href="#" data-largesrc="{{ item.largeImage }}" data-title="{{ item.h1 }}" data-description="{{ item.p|raw }}">
+				<img src="{{ item.thumbnail }}" alt="{{ item.h1|raw }}"/>
+			</a>
+		</li>
+		{% endfor %}
+
+	</ul>
+</div>

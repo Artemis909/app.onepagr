@@ -1,0 +1,18 @@
+{% extends 'OnepagrTemplateBundle::layout.html.twig' %}
+{% block body %}
+{% for section in sections %}
+{% include section.template with {'section' : section} %}
+{% endfor %}
+{% endblock %}
+{% block footerscript %}
+{{ parent() }}
+<script src="{{ asset('assets/main/js/grid.js') }}"></script>
+<script src="{{ asset('assets/main/js/webfont.min.js') }}"></script>
+<script>
+WebFont.load({
+	google: {
+		families: ['Raleway', 'Lato']
+	}
+});
+</script>
+{% endblock %}

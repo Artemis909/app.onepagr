@@ -1,0 +1,89 @@
+{% block opheader %}
+<section id="op-header-bg" class="">
+	<div class="col-md-12 op-profile">
+
+	</div>
+	<!--<div class="col-md-6 op-profile-2"></div>-->
+</section>
+<section id="op-header-gradient" class=""></section>
+<section id="op-header" class="container-fluid" role="main" id="top">
+	<div class="row">
+		<div class="col-md-12 summary">
+			<div class="content text-center">
+				<p><img class="img-circle" alt="Malick Ceesay" src="{{ asset('profile/malickceesay/pages/showcase/assets/img/malick200.png') }}" style="width: 160px; height: 160px;"></p>
+				<p class="name">Malick Ceesay</p>
+				<p class="title">Artist</p>
+				<p>
+					<span class="phone"><abbr title="Phone">P: </abbr> <span>+220 7402534</span></span>
+					<a class="email" href="mailto:malickcee@yahoo.com">malickcee@yahoo.com</a>
+				</p>
+				<p>
+				<ul class="footer centered center-block text-center wow animated fadeIn" data-wow-duration="5s" data-wow-delay="1s">
+					<li><a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+					<li><a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+					<li><a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+				</ul>
+				</p>
+			</div>
+		</div>
+		<div class="col-md-12 op-bg-2 op-content">
+			<div class="op-title">
+				<h1>About Me</h1>
+			</div>
+			<p class="op-p">
+				Hi. I am Malick Cessay. I am an Artist from The Gambia. 
+				I convey stylized African figures on canvass. See some of my work below and follow me on instagram 
+				to see more my most recent paintings.
+			</p>
+
+		</div>
+		<div class="col-md-12 op-content">
+			<div class="op-title">
+				<h1>{{ gallery.h1|raw }}</h1>
+				<h3>{{ gallery.h2|raw }}</h3>
+			</div>
+			<div>
+				<ul id="og-grid" class="og-grid">
+					{% for item in gallery.items %}
+					<li>
+						<a href="#" data-largesrc="{{ item.largeImage }}" data-title="{{ item.h1 }}" data-description="{{ item.p|raw }}">
+							<img src="{{ item.thumbnail }}" alt="{{ item.h1|raw }}"/>
+						</a>
+					</li>
+					{% endfor %}
+
+				</ul>
+			</div>
+		</div>
+		<footer class="col-md-12 centered center-block">
+				<ul class="centered center-block" data-wow-duration="5s" data-wow-delay="1s">
+					<li><a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+					<li><a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+					<li><a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+				</ul>
+</footer>
+	</div>
+	
+	
+</section>
+
+
+<script src="{{ asset('bundles/onepagrtemplate/js/typed.js') }}"></script>
+<script src="{{ asset('bundles/onepagrtemplate/js/wow.min.js') }}"></script>
+<link href="{{ css }}" rel="stylesheet" />
+<style>
+
+</style>
+<script>
+$(function() {
+
+
+	new WOW().init();
+	$(function() {
+		Grid.init();
+	});
+
+
+});
+</script>
+{% endblock %}

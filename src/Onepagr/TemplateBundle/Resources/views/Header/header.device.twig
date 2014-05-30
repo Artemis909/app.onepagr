@@ -1,0 +1,58 @@
+<section id="op-header-bg" class="">
+	<div class="col-md-12 op-profile"></div>
+</section>
+<section id="op-header-gradient" class=""></section>
+<section id="op-header" class="container-fluid" role="main" id="top">
+	<div class="row">
+		<div class="col-md-8 text-center op-device animated fadeInUpBig" data-wow-delay="0.2">
+			<div class="wrap">
+			{% include "OnepagrTemplateBundle:Device:device.ipad.silver.twig" %}
+		</div>
+		</div>
+		<div class="col-md-4 content">
+			<!--
+			<p>
+				<img src="{{ contents.header.data.h2|raw }}" class="img-responsive centered" alt="" title="" />
+			</p>
+			-->
+			<h1 class="wow fadeInLeft animated op-text2" data-wow-delay="0.5">
+				{{ contents.header.data.h2|raw }}
+			</h1>
+			<h1 class="wow fadeInLeft animated op-text3" data-wow-delay="0.5">
+				{{ contents.header.data.h3|raw }}
+			</h1>
+			<p id="beta-invite" class="wow fadeIn animated op-text4" data-wow-delay="1s">
+				{{ contents.header.data.p|raw }}
+			</p>
+			<div class="subscribe-form">
+				<form class="form-inline" role="form" method="post" name="mc-embedded-subscribe-form" action="{{ contents.form.data.action }}">
+					<div class="form-group">
+						<label class="sr-only" for="EMAIL">{{ contents.form.data.email.label }}</label>
+						<input type="{{ contents.form.data.email.name }}" class="form-control col-md-6" id="EMAIL" placeholder="{{ contents.form.data.email.label }}">
+					</div>
+					<div style="position: absolute; left: -5000px;"><input type="text" name="{{ contents.form.data.hidden.name }}" value=""></div>
+					<button type="submit" class="btn btn-default btn-subscribe">{{ contents.form.data.submitText.label }}</button>
+				</form>
+			</div>
+		</div>
+</section>
+
+
+<!--<script src="{{ asset('bundles/onepagrtemplate/js/typed.js') }}"></script>-->
+<script src="{{ asset('bundles/onepagrtemplate/js/wow.min.js') }}"></script>
+<link href="{{ asset('template/css/device/style.css') }}" rel="stylesheet" />
+<link href="{{ css }}" rel="stylesheet" />
+<style>
+
+</style>
+<script>
+	$(function() {
+
+		new WOW().init();
+		$(function() {
+			// Grid.init();
+		});
+
+
+	});
+</script>

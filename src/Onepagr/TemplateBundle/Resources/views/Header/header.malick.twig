@@ -1,0 +1,71 @@
+{% block opheader %}
+<section id="op-header-bg" class="">
+	<div class="col-md-12 op-profile">
+
+	</div>
+	<div class="col-md-6 op-profile-2"></div>
+</section>
+<section id="op-header-gradient" class=""></section>
+<section id="op-header" class="container-fluid" role="main" id="top">
+	<div class="row">
+		<div class="col-md-6 summary">
+			<div class="content text-center">
+				<p><img class="img-circle" alt="Malick Ceesay" src="{{ asset('profile/malickceesay/pages/showcase/assets/img/malick200.png') }}" style="width: 160px; height: 160px;"></p>
+				<p class="name">Malick Ceesay</p>
+				<p class="title">Artist</p>
+				<p>
+					<span class="phone"><abbr title="Phone">P: </abbr> <span>+220 7402534</span></span>
+					<a class="email" href="mailto:malickcee@yahoo.com">malickcee@yahoo.com</a>
+				</p>
+				<p>
+				<ul class="footer centered center-block text-center wow animated fadeIn" data-wow-duration="5s" data-wow-delay="1s">
+					<li><a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+					<li><a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+					<li><a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+				</ul>
+				</p>
+			</div>
+		</div>
+		<div class="col-md-6 op-bg-2 detail">
+			<p>
+				Hi. I am Malick Cessay. I am an Artist from The Gambia. 
+				I convey stylized African figures on canvass. See some of my work below and follow me on instagram 
+				to see more my most recent paintings.
+			</p>
+
+		</div>
+		<div class="col-md-12 op-content">
+			{% include "OnepagrTemplateBundle:Gallery:gallery.malick.twig" with {'gallery' : contents.gallery.data } only %}
+		</div>
+		<footer class="col-md-12 centered center-block">
+			<ul class="centered center-block" data-wow-duration="5s" data-wow-delay="1s">
+				<li><a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
+				<li><a href="#" target="_blank"><i class="fa fa-instagram fa-2x"></i></a></li>
+			</ul>
+		</footer>
+	</div>
+
+
+</section>
+
+
+<script src="{{ asset('bundles/onepagrtemplate/js/typed.js') }}"></script>
+<script src="{{ asset('bundles/onepagrtemplate/js/wow.min.js') }}"></script>
+<link href="{{ css }}" rel="stylesheet" />
+<style>
+
+</style>
+<script>
+$(function() {
+
+
+	new WOW().init();
+	$(function() {
+		Grid.init();
+	});
+
+
+});
+</script>
+{% endblock %}

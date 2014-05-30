@@ -1,0 +1,7 @@
+parameters:
+#    onepagr_css.example.class: Onepagr\CssBundle\Example
+
+services:
+#    onepagr_css.example:
+#        class: %onepagr_css.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
