@@ -12,7 +12,7 @@ $_return['settings'] = array(
 		'fontFamily' => "'Raleway', sans-serif;"
 	),
 	'userId' => 'example',
-	'page' => 'subscribe-window',
+	'page' => 'subscribe-app',
 	'template' => "OnepagrTemplateBundle:Template:subscribe.plain.twig",
 );
 
@@ -23,7 +23,7 @@ $_return['contents'] = array();
 
 $_return['contents']['header'] = array(
 	'id' => 'header',
-	'template' => 'OnepagrTemplateBundle:Header:header.browser.twig',
+	'template' => 'OnepagrTemplateBundle:Header:header.app.twig',
 	'templateCss' => array('template/css/subscribe/style.window.template.css'),
 	'templateJs' => array(),
 	'data' => array('h1' => "Introducing",
