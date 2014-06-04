@@ -23,7 +23,7 @@ class DefaultController extends Controller {
     }
     
     protected function getPageMapper($profileDir, $userId, $page) {
-        $mapper = new \Onepagr\TemplateBundle\Content\Mapper\FileMapper\ContentFileMapper();
+        $mapper = new \Onepagr\TemplateBundle\Content\Mapper\FileMapper\PageMapper();
         $mapper->setDir($profileDir);
         $mapper->setUserId($userId);
         $mapper->setPage($page);
