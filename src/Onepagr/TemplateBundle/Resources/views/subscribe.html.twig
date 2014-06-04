@@ -9,36 +9,44 @@
         <!-- Bootstrap -->
 		{% block stylesheets %}
         <link href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" media="screen">
-        <link href="{{ css }}" rel="stylesheet" />
-        <script src="{{ asset('assets/jquery/jquery.min.js') }}"></script>
-        <script src="{{ asset('assets/main/js/modernizr.custom.js') }}"></script>
+        <script src="{{ asset('assets/main/js/webfont.min.js') }}"></script>
+        <script>
+            WebFont.load({
+                google: {
+                    families: ['Raleway', 'Lato']
+                }
+            });
+            </script>
+            <link href="{{ css }}" rel="stylesheet" />
+            <script src="{{ asset('assets/jquery/jquery.min.js') }}"></script>
+            <script src="{{ asset('assets/main/js/modernizr.custom.js') }}"></script>
 
-        <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
+            <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+            <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!--[if lt IE 9]>
+              <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+              <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
 		{% endblock %}
-    </head>
+        </head>
 
-    <body>
+        <body>
 
 		{% block body %}
 
 		{% endblock %}
 
 		{% block footerscript %}
-        <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
-        <!-- Include all JavaScripts, compiled by Assetic -->
+            <!-- jQuery (necessary for Bootstraps JavaScript plugins) -->
+            <!-- Include all JavaScripts, compiled by Assetic -->
 
-        <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
-        <!-- Animation start -->
-        <script src="{{ asset('assets/main/js/wow.min.js') }}"></script>
-        <link href="{{ asset('assets/main/css/animate.min.css') }}" rel="stylesheet" media="screen">
-        <!-- Animation end -->
-        <link href="{{ asset('assets/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" media="screen">
+            <script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
+            <!-- Animation start -->
+            <script src="{{ asset('assets/main/js/wow.min.js') }}"></script>
+            <link href="{{ asset('assets/main/css/animate.min.css') }}" rel="stylesheet" media="screen">
+            <!-- Animation end -->
+            <link href="{{ asset('assets/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" media="screen">
 
 		{% endblock %}
-    </body>
-</html>
+        </body>
+    </html>
