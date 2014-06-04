@@ -7,7 +7,10 @@ onepagr_builder:
 
 onepagr_template:
     resource: "@OnepagrTemplateBundle/Resources/config/routing.yml"
-    prefix:   /template
+    prefix:   /
+#onepagr_template_prefix:
+#    resource: "@OnepagrTemplateBundle/Resources/config/routing.yml"
+#    prefix:   /template
 
 
 

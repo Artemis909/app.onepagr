@@ -4,6 +4,9 @@ onepagr_template_homepage:
 onepagr_template_timeline:
     pattern:  /timeline/{name}
     defaults: { _controller: OnepagrTemplateBundle:Default:timeline }
+onepagr_template_create:
+    pattern:  /create/{name}
+    defaults: { _controller: OnepagrTemplateBundle:Default:create }
 onepagr_template_header:
     pattern:  /header/{name}
     defaults: { _controller: OnepagrTemplateBundle:Default:header }

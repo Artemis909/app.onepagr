@@ -1,7 +1,7 @@
 {% extends 'OnepagrTemplateBundle::subscribe.html.twig' %}
 {% block body %}
 {% for section in sections %}
-{% include section.template with {'section' : section} %}
+{% include section.content.template with {'section' : section} %}
 {% endfor %}
 {% endblock %}
 {% block footerscript %}

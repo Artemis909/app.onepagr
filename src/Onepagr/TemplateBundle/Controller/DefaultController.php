@@ -9,6 +9,66 @@ class DefaultController extends Controller {
 	public function indexAction($name) {
 		return $this->render('OnepagrTemplateBundle:Default:index.html.twig', array('name' => $name));
 	}
+	
+	
+	/**
+	 * 
+	 * @param type $name
+	 */
+	public function createAction($name) {
+		$contentEntity = new \Onepagr\TemplateBundle\Content\Entity\ContentEntity();
+		$paletteEntity = new \Onepagr\TemplateBundle\Content\Entity\PaletteEntity();
+		$settingEntity = new \Onepagr\TemplateBundle\Content\Entity\SettingEntity();
+		$contentSectionMapEntity = new \Onepagr\TemplateBundle\Content\Entity\ContentSectionMapEntity();
+		$viewDataEntity = new \Onepagr\TemplateBundle\Content\Entity\ViewDataEntity();
+
+		$loader = new \Onepagr\TemplateBundle\Content\LoaderContent;
+		$loader->setCssTemplateDir($this->get('kernel')->getRootDir() . '/../web/');
+		$loader->setProfileDir($this->get('kernel')->getRootDir() . '/../web/profile/');
+		
+		$paletteId = $this->getRequest()->query->get('palette');
+		$data = $loader->load($name);
+		
+		$contentEntity->setData($data['contents']);
+		$paletteEntity->setData($data['palettes']);
+		$settingEntity->setData($data['settings']);
+		$contentSectionMapEntity->setData($data['sectionContentMap']);
+
+		$mapper = new \Onepagr\TemplateBundle\Content\Mapper\FileMapper\ContentFileMapper();
+		$mapper->setDir($this->get('kernel')->getRootDir() . '/../web/profile/');
+		$mapper->setUserId($data['settings']['userId']);
+		$mapper->setPage($data['settings']['page']);
+
+		$mapper->addEntity($contentEntity)
+				->addEntity($paletteEntity)
+				->addEntity($settingEntity)
+				->addEntity($contentSectionMapEntity);
+				
+
+		$pageMapper = new \Onepagr\TemplateBundle\Content\Mapper\FileMapper\PageMapper();
+		$pageMapper->setDir($this->get('kernel')->getRootDir() . '/../web/profile/');
+		$pageMapper->setUserId($data['settings']['userId']);
+		$pageMapper->setPage($data['settings']['page']);
+
+		$pageMapper->save();
+
+		
+		$palette = $loader->getPalette($paletteId);
+	
+		$viewData = $loader->getViewData($palette);
+		$viewDataEntity->setData($viewData);
+		
+		$mapper->addEntity($viewDataEntity);
+		$mapper->save();
+		
+		
+		// print_r($viewData);
+		// exit;
+		
+		return $this->render($viewData['settings']['template'], $viewData);
+		
+		
+	}
 
 	/**
 	 * 
@@ -92,6 +152,7 @@ class DefaultController extends Controller {
 			$viewData['sections'][$key] = $value;
 			$viewData['sections'][$key]['content'] = $contents[$value['contentId']];
 		}
+		
 		// $cssTemplate = $this->get('kernel')->getRootDir() . '/../web/bundles/onepagrtemplate/css/templates/' . 'header/header.book.template.css';
 
 		return $this->render($settings['template'], $viewData);
