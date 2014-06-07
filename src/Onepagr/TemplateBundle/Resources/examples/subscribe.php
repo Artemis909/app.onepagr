@@ -12,7 +12,7 @@ $_return['settings'] = array(
 		'fontFamily' => "'Raleway', sans-serif;"
 	),
 	'userId' => 'example',
-	'page' => 'subscribe-app',
+	'page' => 'subscribe',
 	'template' => "OnepagrTemplateBundle:Template:subscribe.plain.twig",
 );
 
@@ -23,8 +23,8 @@ $_return['contents'] = array();
 
 $_return['contents']['header'] = array(
 	'id' => 'header',
-	'template' => 'OnepagrTemplateBundle:Header:header.app.twig',
-	'templateCss' => array('template/css/app/style.app.template.css'),
+	'template' => 'OnepagrTemplateBundle:Header:header.subscribe.twig',
+	'templateCss' => array('template/css/subscribe/style.window.template.css'),
 	'templateJs' => array(),
 	'data' => array('h1' => "Introducing",
 		'h2' => "Onepager",
@@ -229,8 +229,8 @@ $_return['palettes'][5] = array(
 	'themeColor' => '#FC6042',
 	'name' => 'Burnt Red',
 	'bgColor1' => '#FC6042',
-	'bgImage' => '##baseUrl##/media/background/unsplash/apple-gear-looking-pretty.jpg',
-	'bgImage2' => '##baseUrl##/media/background/picjumbo/6_Water_Food/IMG_6203.jpg',
+	'bgImage' => '##baseUrl##/media/background/unsplash/unsplash-kitsune-3.jpg',
+	'bgImage2' => '##baseUrl##/media/background/unsplash/EpBHfTrtRLa2PCPwuXkQ_thessaloniki_port.jpg',
 	'bgColor2' => '#fff',
 	'bgColor3' => '#FC6042',
 	'fontColor1' => '#fff',
@@ -249,10 +249,10 @@ $_return['palettes'][6] = array(
 	'themeColor' => '#FC6042',
 	'name' => 'Burnt Red',
 	'bgColor1' => '#FC6042',
-	'bgImage' => '../img/bag-and-hands.jpg',
-	'bgImage2' => '../img/fruit_1.jpg',
+	'bgImage' => '##baseUrl##/media/background/picjumbo/6_Water_Food/IMG_6166.jpg',
+	'bgImage2' => '##baseUrl##/media/background/picjumbo/6_Water_Food/IMG_6152.jpg',
 	'bgColor2' => '#fff',
-	'bgColor2' => '#fff',
+	'bgColor3' => '#e67e22',
 	'fontColor1' => '#fff',
 	'fontColor2' => '#fff',
 	'fontColor3' => '#fff',
@@ -346,7 +346,7 @@ $_return['palettes'][11] = array(
 	'bgColor1' => '#FC6042',
 	'bgImage' => '../img/fruit_4.jpg',
 	'bgImage2' => '../img/fruit_1.jpg',
-	'bgColor2' => 'transparent',
+	'bgColor2' => '#e67e22',
 	'fontColor1' => '#fff',
 	'fontColor2' => '#fff',
 	'fontColor3' => '#fff',

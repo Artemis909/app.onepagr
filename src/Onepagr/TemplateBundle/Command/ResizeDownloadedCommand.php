@@ -56,7 +56,7 @@ class ResizeDownloadedCommand extends ContainerAwareCommand {
 
 					$from = $fileinfo->getPathname();
 					$to = str_replace($source, $target, $fileinfo->getPathname());
-
+					$to = str_replace(" ", "_", $to);
 					$dir = dirname($to);
 
 					if (!file_exists($dir)) {

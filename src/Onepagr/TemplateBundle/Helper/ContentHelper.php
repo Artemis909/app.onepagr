@@ -24,8 +24,20 @@ class ContentHelper {
      * @var type 
      */
     protected $entities;
-    
-    public function getEntities() {
+	
+	protected $baseUrl;
+	
+	public function getBaseUrl() {
+		return $this->baseUrl;
+	}
+
+	public function setBaseUrl($baseUrl) {
+		$this->baseUrl = $baseUrl;
+	}
+
+	
+
+	public function getEntities() {
         return $this->entities;
     }
 
@@ -52,19 +64,37 @@ class ContentHelper {
         return $this;
     }
 
-    public function getPalette($palette) {
+    public function getPalette($paletteKey) {
         $palettes = $this->entities['palette']->getData();
-        if (null === $palette) {
-            return reset($palettes);
-        }
+		
+        
 
-        if (isset($palettes[$palette])) {
-            return $palettes[$palette];
-        }
-        return reset($palettes);
+        if ($paletteKey && isset($palettes[$paletteKey])) {
+            $return = $palettes[$paletteKey];
+			$return['key'] = $paletteKey;
+        } else {
+			$return = reset($palettes);
+			$return['key'] = key($palettes);
+		}
+		
+		return $this->prependBaseUrl($return);
+		
     }
+	
+	public function  prependBaseUrl($palette) {
+		$baseUrl = $this->getBaseUrl();
+		if($baseUrl && $palette) {
+			foreach($palette AS $key => $value) {
+				if(is_string($value)) {
+					$palette[$key] = str_replace("##baseUrl##", $baseUrl, $value);
+				}
+				
+			}
+		}
+		return $palette;
+	}
 
-    public function getViewCss($options) {
+	public function getViewCss($options, $paetteKey) {
 
         $contents = $this->entities['content']->getData();
         $settings = $this->entities['setting']->getData();
@@ -86,7 +116,7 @@ class ContentHelper {
                         $assetDir = $this->getProfileDir() . '/' . $settings['userId'] . '/pages/' . $settings['page'] . '/assets/img/';
                         $options['output_dir'] = $outputDir;
                         $options['asset_dir'] = $assetDir;
-                        $options['output_file'] = $content['id'] . '.' . $key . '.style.css';
+                        $options['output_file'] = $content['id'] . '.' . $key . '_'  . $paetteKey . '.style.css';
                         // $options['rewrite_import_urls'] = false;
                         // print_r($options);
                         $return[] = csscrush_file($cssTemplate, $options);
@@ -105,7 +135,7 @@ class ContentHelper {
         $settings = $this->entities['setting']->getData();
 
 
-        $css = $this->getViewCss(array('vars' => $palette));
+        $css = $this->getViewCss(array('vars' => $palette), $palette['key']);
         // print_r($palette);
         $viewData = array(
             'css' => $css[0],

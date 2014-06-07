@@ -56,14 +56,65 @@
         "imports": [
 
         ],
-        "datem_sum": 1402152488,
+        "datem_sum": 1402171532,
+        "options": {
+            "vars": {
+                "themeColor": "#2CC990",
+                "name": "Calm Green",
+                "bgColor1": "#2CC990",
+                "bgImage": "..\/img\/mockups.svg",
+                "bgImage2": "..\/img\/fruit_2.jpg",
+                "bgColor2": "#363F48",
+                "fontColor1": "#fff",
+                "fontColor2": "#fff",
+                "fontColor3": "#000",
+                "fontColor4": "rgba(255,255,255,.65)",
+                "opacity": 0.85,
+                "borderRadius": "0px",
+                "border": "1px solid",
+                "borderColor": "#fff",
+                "fontName": "Raleway",
+                "fontFamily": "'Raleway', sans-serif;"
+            },
+            "output_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/css\/",
+            "asset_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/img\/",
+            "output_file": "header.0.style.css",
+            "minify": true,
+            "formatter": null,
+            "versioning": true,
+            "boilerplate": true,
+            "cache": true,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "enable": null,
+            "disable": null,
+            "settings": [
+
+            ],
+            "stat_dump": false,
+            "trace": [
+
+            ],
+            "source_map": false,
+            "newlines": "use-platform",
+            "global_vars": [
+
+            ]
+        }
+    },
+    "header.0_.style.crush.css": {
+        "imports": [
+
+        ],
+        "datem_sum": 1402171799,
         "options": {
             "vars": {
                 "themeColor": "#2C82C9",
                 "name": "Happy Blue",
                 "bgColor1": "#2C82C9",
-                "bgImage": "..\/img\/mockups.svg",
-                "bgImage2": "..\/img\/fruit_1.jpg",
+                "bgImage": "http:\/\/localhost\/app.onepagr\/web\/media\/svg\/mockups.svg",
+                "bgImage2": "http:\/\/localhost\/app.onepagr\/web\/media\/background\/picjumbo\/6_Water_Food\/IMG_6152.jpg",
                 "bgColor2": "#363F48",
                 "fontColor1": "#fff",
                 "fontColor2": "#fff",
@@ -75,11 +126,385 @@
                 "borderColor": "#fff",
                 "borderRadius2": "8px",
                 "fontName": "Raleway",
-                "fontFamily": "'Raleway', sans-serif;"
+                "fontFamily": "'Raleway', sans-serif;",
+                "key": null
             },
             "output_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/css\/",
             "asset_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/img\/",
-            "output_file": "header.0.style.css",
+            "output_file": "header.0_.style.css",
+            "minify": true,
+            "formatter": null,
+            "versioning": true,
+            "boilerplate": true,
+            "cache": true,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "enable": null,
+            "disable": null,
+            "settings": [
+
+            ],
+            "stat_dump": false,
+            "trace": [
+
+            ],
+            "source_map": false,
+            "newlines": "use-platform",
+            "global_vars": [
+
+            ]
+        }
+    },
+    "header.0_themeColor.style.crush.css": {
+        "imports": [
+
+        ],
+        "datem_sum": 1402171846,
+        "options": {
+            "vars": {
+                "themeColor": "#2C82C9",
+                "name": "Happy Blue",
+                "bgColor1": "#2C82C9",
+                "bgImage": "http:\/\/localhost\/app.onepagr\/web\/media\/svg\/mockups.svg",
+                "bgImage2": "http:\/\/localhost\/app.onepagr\/web\/media\/background\/picjumbo\/6_Water_Food\/IMG_6152.jpg",
+                "bgColor2": "#363F48",
+                "fontColor1": "#fff",
+                "fontColor2": "#fff",
+                "fontColor3": "#000",
+                "fontColor4": "rgba(255,255,255,.65)",
+                "opacity": 0.85,
+                "borderRadius": "4px",
+                "border": "0",
+                "borderColor": "#fff",
+                "borderRadius2": "8px",
+                "fontName": "Raleway",
+                "fontFamily": "'Raleway', sans-serif;",
+                "key": "themeColor"
+            },
+            "output_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/css\/",
+            "asset_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/img\/",
+            "output_file": "header.0_themeColor.style.css",
+            "minify": true,
+            "formatter": null,
+            "versioning": true,
+            "boilerplate": true,
+            "cache": true,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "enable": null,
+            "disable": null,
+            "settings": [
+
+            ],
+            "stat_dump": false,
+            "trace": [
+
+            ],
+            "source_map": false,
+            "newlines": "use-platform",
+            "global_vars": [
+
+            ]
+        }
+    },
+    "header.0_0.style.crush.css": {
+        "imports": [
+
+        ],
+        "datem_sum": 1402175161,
+        "options": {
+            "vars": {
+                "themeColor": "#2C82C9",
+                "name": "Happy Blue",
+                "bgColor1": "#2C82C9",
+                "bgImage": "http:\/\/localhost\/app.onepagr\/web\/media\/svg\/mockups.svg",
+                "bgImage2": "http:\/\/localhost\/app.onepagr\/web\/media\/background\/picjumbo\/6_Water_Food\/IMG_6152.jpg",
+                "bgColor2": "#363F48",
+                "bgColor3": "#363F48",
+                "fontColor1": "#fff",
+                "fontColor2": "#fff",
+                "fontColor3": "#000",
+                "fontColor4": "rgba(255,255,255,.65)",
+                "opacity": 0.85,
+                "borderRadius": "4px",
+                "border": "0",
+                "borderColor": "#fff",
+                "borderRadius2": "8px",
+                "fontName": "Raleway",
+                "fontFamily": "'Raleway', sans-serif;",
+                "key": 0
+            },
+            "output_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/css\/",
+            "asset_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/img\/",
+            "output_file": "header.0_0.style.css",
+            "minify": true,
+            "formatter": null,
+            "versioning": true,
+            "boilerplate": true,
+            "cache": true,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "enable": null,
+            "disable": null,
+            "settings": [
+
+            ],
+            "stat_dump": false,
+            "trace": [
+
+            ],
+            "source_map": false,
+            "newlines": "use-platform",
+            "global_vars": [
+
+            ]
+        }
+    },
+    "header.0_1.style.crush.css": {
+        "imports": [
+
+        ],
+        "datem_sum": 1402174269,
+        "options": {
+            "vars": {
+                "themeColor": "#2CC990",
+                "name": "Calm Green",
+                "bgColor1": "#2CC990",
+                "bgImage": "http:\/\/localhost\/app.onepagr\/web\/media\/svg\/mockups.svg",
+                "bgImage2": "http:\/\/localhost\/app.onepagr\/web\/media\/background\/picjumbo\/6_Water_Food\/IMG_6152.jpg",
+                "bgColor2": "#363F48",
+                "bgColor3": "#363F48",
+                "fontColor1": "#fff",
+                "fontColor2": "#fff",
+                "fontColor3": "#000",
+                "fontColor4": "rgba(255,255,255,.65)",
+                "opacity": 0.85,
+                "borderRadius": "0px",
+                "border": "0px solid",
+                "borderColor": "transparent",
+                "fontName": "Lato",
+                "fontFamily": "'Lato', sans-serif;",
+                "key": "1"
+            },
+            "output_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/css\/",
+            "asset_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/img\/",
+            "output_file": "header.0_1.style.css",
+            "minify": true,
+            "formatter": null,
+            "versioning": true,
+            "boilerplate": true,
+            "cache": true,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "enable": null,
+            "disable": null,
+            "settings": [
+
+            ],
+            "stat_dump": false,
+            "trace": [
+
+            ],
+            "source_map": false,
+            "newlines": "use-platform",
+            "global_vars": [
+
+            ]
+        }
+    },
+    "header.0_2.style.crush.css": {
+        "imports": [
+
+        ],
+        "datem_sum": 1402174275,
+        "options": {
+            "vars": {
+                "themeColor": "#EEE657",
+                "name": "Yello",
+                "bgColor1": "#EEE657",
+                "bgImage": "http:\/\/localhost\/app.onepagr\/web\/media\/svg\/mockups.svg",
+                "bgImage2": "http:\/\/localhost\/app.onepagr\/web\/media\/background\/picjumbo\/6_Water_Food\/IMG_6152.jpg",
+                "bgColor2": "#165c63",
+                "bgColor3": "#165c63",
+                "fontColor1": "#165c63",
+                "fontColor2": "#fff",
+                "fontColor3": "#000",
+                "fontColor4": "rgba(255,255,255,.65)",
+                "opacity": 1,
+                "borderRadius": "4px",
+                "border": "0px solid",
+                "borderColor": "#464648",
+                "fontName": "Raleway",
+                "fontFamily": "'Raleway', sans-serif;",
+                "boxShadow": "0 0px #fff",
+                "key": "2"
+            },
+            "output_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/css\/",
+            "asset_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/img\/",
+            "output_file": "header.0_2.style.css",
+            "minify": true,
+            "formatter": null,
+            "versioning": true,
+            "boilerplate": true,
+            "cache": true,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "enable": null,
+            "disable": null,
+            "settings": [
+
+            ],
+            "stat_dump": false,
+            "trace": [
+
+            ],
+            "source_map": false,
+            "newlines": "use-platform",
+            "global_vars": [
+
+            ]
+        }
+    },
+    "header.0_3.style.crush.css": {
+        "imports": [
+
+        ],
+        "datem_sum": 1402174279,
+        "options": {
+            "vars": {
+                "themeColor": "#FCB941",
+                "name": "Thai Curry",
+                "bgColor1": "#FCB941",
+                "bgImage": "http:\/\/localhost\/app.onepagr\/web\/media\/svg\/mockups.svg",
+                "bgImage2": "http:\/\/localhost\/app.onepagr\/web\/media\/background\/picjumbo\/6_Water_Food\/IMG_6152.jpg",
+                "bgColor2": "#fff",
+                "bgColor3": "#f66",
+                "fontColor1": "#fff",
+                "fontColor2": "#fff",
+                "fontColor3": "#000",
+                "fontColor4": "rgba(255,255,255,.65)",
+                "opacity": 0.85,
+                "borderRadius": "5px",
+                "border": "0px",
+                "borderColor": "#fff",
+                "fontName": "Raleway",
+                "fontFamily": "'Raleway', sans-serif;",
+                "key": "3"
+            },
+            "output_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/css\/",
+            "asset_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/img\/",
+            "output_file": "header.0_3.style.css",
+            "minify": true,
+            "formatter": null,
+            "versioning": true,
+            "boilerplate": true,
+            "cache": true,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "enable": null,
+            "disable": null,
+            "settings": [
+
+            ],
+            "stat_dump": false,
+            "trace": [
+
+            ],
+            "source_map": false,
+            "newlines": "use-platform",
+            "global_vars": [
+
+            ]
+        }
+    },
+    "header.0_4.style.crush.css": {
+        "imports": [
+
+        ],
+        "datem_sum": 1402174282,
+        "options": {
+            "vars": {
+                "themeColor": "#FC6042",
+                "name": "Burnt Red",
+                "bgColor1": "#FC6042",
+                "bgImage": "http:\/\/localhost\/app.onepagr\/web\/media\/svg\/mockups.svg",
+                "bgImage2": "http:\/\/localhost\/app.onepagr\/web\/media\/background\/picjumbo\/6_Water_Food\/IMG_6152.jpg",
+                "bgColor2": "#fff",
+                "bgColor3": "#B21700",
+                "fontColor1": "#fff",
+                "fontColor2": "#fff",
+                "fontColor3": "#000",
+                "fontColor4": "rgba(255,255,255,.65)",
+                "opacity": 1,
+                "borderRadius": "0px",
+                "border": "0px",
+                "borderColor": "#fff",
+                "fontName": "Raleway",
+                "fontFamily": "'Raleway', sans-serif;",
+                "key": "4"
+            },
+            "output_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/css\/",
+            "asset_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/img\/",
+            "output_file": "header.0_4.style.css",
+            "minify": true,
+            "formatter": null,
+            "versioning": true,
+            "boilerplate": true,
+            "cache": true,
+            "doc_root": null,
+            "vendor_target": "all",
+            "rewrite_import_urls": true,
+            "enable": null,
+            "disable": null,
+            "settings": [
+
+            ],
+            "stat_dump": false,
+            "trace": [
+
+            ],
+            "source_map": false,
+            "newlines": "use-platform",
+            "global_vars": [
+
+            ]
+        }
+    },
+    "header.0_5.style.crush.css": {
+        "imports": [
+
+        ],
+        "datem_sum": 1402174859,
+        "options": {
+            "vars": {
+                "themeColor": "#FC6042",
+                "name": "Burnt Red",
+                "bgColor1": "#FC6042",
+                "bgImage": "http:\/\/localhost\/app.onepagr\/web\/media\/background\/unsplash\/unsplash-kitsune-3.jpg",
+                "bgImage2": "http:\/\/localhost\/app.onepagr\/web\/media\/background\/unsplash\/EpBHfTrtRLa2PCPwuXkQ_thessaloniki_port.jpg",
+                "bgColor2": "#fff",
+                "bgColor3": "#FC6042",
+                "fontColor1": "#fff",
+                "fontColor2": "#fff",
+                "fontColor3": "#000",
+                "fontColor4": "rgba(255,255,255,.65)",
+                "opacity": 0,
+                "borderRadius": "4px",
+                "border": "0px",
+                "borderColor": "#fff",
+                "fontName": "Raleway",
+                "fontFamily": "'Raleway', sans-serif;",
+                "key": "5"
+            },
+            "output_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/css\/",
+            "asset_dir": "\/Library\/WebServer\/Documents\/app.onepagr\/app\/..\/web\/profile\/\/example\/pages\/subscribe-window\/assets\/img\/",
+            "output_file": "header.0_5.style.css",
             "minify": true,
             "formatter": null,
             "versioning": true,

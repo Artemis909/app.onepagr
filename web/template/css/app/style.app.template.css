@@ -123,7 +123,7 @@ h1.op-text3 {
 	-o-transition-duration: 0.3s;
 	transition-duration: 0.3s;
 	background: $(bgColor3);
-	color: $(fontColor2);
+	color: $(fontColor1);
 	text-shadow: none;
 	border: none;
 	padding: 5px 15px 5px 15px;;
@@ -131,13 +131,10 @@ h1.op-text3 {
 	border: $(border);
 	border-color: $(borderColor);
 	border-radius: $(borderRadius);
-	box-shadow: $(boxShadow);
 }
 
-.op-window {
+.op-device {
 	z-index: 1;
-	text-align: center;
-	float: none;
 	height: 100%;
 	overflow: hidden;
 	padding-top: 100px;
@@ -146,56 +143,38 @@ h1.op-text3 {
 	position: relative;
 }
 
-.op-window .wrap {
-	display: block;
-	margin: auto;
-	border-radius: $(borderRadius2);
-	width: 80%;
-	float: none;
-	clear: both;
-	overflow: hidden;
-}
-.op-window .title-bar {
-	padding: 10px 0;
-	font-size: 0.75em;
+.op-device .wrap {
+	vertical-align: middle;
 	text-align: center;
-	background-color: #E2E2E2;
-	height: 30px;
-	border-bottom: #E2E2E2 1px solid; 
-}
-.op-window .title-bar ul,  .op-window .title-bar ul li {
-	list-style: none;
+	overflow: hidden;
 }
 
-.op-window .title-bar ul li {
-	display:block;
-	float: left;
-	margin-right: 5px;
-	background-color: #65B459;
-	height: 10px;
-	-moz-border-radius:75px;
-	-webkit-border-radius: 75px;
-	width: 10px;
-}
-.op-window .title-bar ul li.close-window {
-	background-color: #DA645E;
-}
-.op-window .title-bar ul li.minimise-window {
-	background-color: #DFAA5E;
-}
-.op-window .title-bar ul li.maximise-window {
-	background-color: #65B459;
-}
-.op-window .screen {
-	height: 650px;
-	background-color: #F7F7F7;
-	background-size: cover;
+#ipad .screen, #nexus5 .screen, #htc-one .screen, #iphone4s .screen, 
+#iphone5c.green .screen,
+#iphone5c.white .screen,
+#iphone5c.red .screen,
+#iphone5c.yellow .screen,
+#iphone5c.blue .screen,
+#iphone5s.gold .screen,
+#iphone5s.silver .screen,
+#iphone5s.black .screen
+{
+	display: block;
+
+	height: 100%;
+	background: transparent;
+	background-image: url("$(bgImage2)") !important;
 	background-repeat: no-repeat;
-	background-image: url("$(bgImage2)");
-	padding: 10px;
-	font-size: 1.75em;
-	line-height: 1.40em;
-	font-weight: 500;
-	text-align: left;
-	overflow: hidden;
+	background-size: cover;
+}
+
+#iphone4s .device {
+	height: 700px;
+}
+.op-device section.gold, section.silver, section.blue, section.red, section.yellow, section.green, #nexus5, #lumia920, #s5, #htc-one {
+	background: transparent;
+	border-bottom: 0px solid rgba(0, 0, 0, 0.1);
+}
+.op-device section.white, #s5.black, #lumia920.white, #lumia920.black {
+	background: transparent;
 }

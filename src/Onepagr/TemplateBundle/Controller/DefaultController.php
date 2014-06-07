@@ -37,6 +37,10 @@ class DefaultController extends Controller {
      * @param type $name
      */
     public function createAction($name) {
+		
+		$request = $this->getRequest();
+		$baseUrl = $request->getScheme() . '://' . $request->getHttpHost() . $request->getBasePath();
+	
         $contentEntity = new \Onepagr\TemplateBundle\Content\Entity\ContentEntity();
         $paletteEntity = new \Onepagr\TemplateBundle\Content\Entity\PaletteEntity();
         $settingEntity = new \Onepagr\TemplateBundle\Content\Entity\SettingEntity();
@@ -51,7 +55,9 @@ class DefaultController extends Controller {
         
         $helper->setCssTemplateDir($this->get('kernel')->getRootDir() . '/../web/');
         $helper->setProfileDir($this->get('kernel')->getRootDir() . '/../web/profile/');
-        
+        $helper->setBaseUrl($baseUrl);
+		
+		
         $paletteId = $this->getRequest()->query->get('palette');
         $data = $loader->load($name);
 
@@ -100,6 +106,10 @@ class DefaultController extends Controller {
 
     public function pageAction($page, $palette = 1) {
 
+		$request = $this->getRequest();
+		$baseUrl = $request->getScheme() . '://' . $request->getHttpHost() . $request->getBasePath();
+	
+		
         $userId = 'example';
         
         $contentEntity = new \Onepagr\TemplateBundle\Content\Entity\ContentEntity();
@@ -113,7 +123,8 @@ class DefaultController extends Controller {
         
         $helper->setCssTemplateDir($this->get('kernel')->getRootDir() . '/../web/');
         $helper->setProfileDir($this->get('kernel')->getRootDir() . '/../web/profile/');
-        
+        $helper->setBaseUrl($baseUrl);
+		
         $paletteId = $palette;
 
         $mapper = $this->getContentFileMapper($this->get('kernel')->getRootDir() . '/../web/profile/', $userId, $page);
@@ -126,6 +137,7 @@ class DefaultController extends Controller {
         $helper->setEntities($enitties);
 
         $palette = $helper->getPalette($paletteId);
+	
         $viewData = $helper->getViewData($palette);
 
         return $this->render($viewData['settings']['template'], $viewData);

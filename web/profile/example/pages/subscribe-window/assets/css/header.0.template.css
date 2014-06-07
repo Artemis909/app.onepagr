@@ -122,8 +122,8 @@ h1.op-text3 {
 	-moz-transition-duration: 0.3s;
 	-o-transition-duration: 0.3s;
 	transition-duration: 0.3s;
-	background: $(bgColor2);
-	color: $(fontColor1);
+	background: $(bgColor3);
+	color: $(fontColor2);
 	text-shadow: none;
 	border: none;
 	padding: 5px 15px 5px 15px;;
@@ -131,6 +131,7 @@ h1.op-text3 {
 	border: $(border);
 	border-color: $(borderColor);
 	border-radius: $(borderRadius);
+	box-shadow: $(boxShadow);
 }
 
 .op-window {
