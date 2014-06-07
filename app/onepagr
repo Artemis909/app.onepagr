@@ -6,6 +6,10 @@
 //umask(0000);
 
 set_time_limit(0);
+ini_set('memory_limit','2000M');
+
+ error_reporting(E_ALL);
+ ini_set("display_errors", 1);
 
 require_once __DIR__.'/bootstrap.php.cache';
 require_once __DIR__.'/AppKernel.php';
@@ -14,6 +18,7 @@ use Symfony\Bundle\FrameworkBundle\Console\Application;
 use Symfony\Component\Console\Input\ArgvInput;
 use Symfony\Component\Debug\Debug;
 use Onepagr\TemplateBundle\Command\ResizeCommand;
+use Onepagr\TemplateBundle\Command\ResizeDownloadedCommand;
 
 $input = new ArgvInput();
 $env = $input->getParameterOption(array('--env', '-e'), getenv('SYMFONY_ENV') ?: 'dev');
@@ -26,4 +31,5 @@ if ($debug) {
 $kernel = new AppKernel($env, $debug);
 $application = new Application($kernel);
 $application->add(new ResizeCommand());
+$application->add(new ResizeDownloadedCommand());
 $application->run($input);
