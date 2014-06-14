@@ -67,3 +67,13 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+    
+services:
+#    onepagr_template.example:
+#        class: %onepagr_template.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    onepagr.twig.onepagr_asset:
+        class: Onepagr\TemplateBundle\TwigExtension\AssetPathTwigExtension
+        tags:
+            - { name: twig.extension }
+

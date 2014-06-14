@@ -5,3 +5,7 @@ services:
 #    onepagr_template.example:
 #        class: %onepagr_template.example.class%
 #        arguments: [@service_id, "plain_value", %parameter%]
+    onepagr.twig.onepagr_asset_extension:
+        class: Onepagr\TemplateBundle\TwigExtension\AssetPathTwigExtension
+        tags:
+            - { name: twig.extension }

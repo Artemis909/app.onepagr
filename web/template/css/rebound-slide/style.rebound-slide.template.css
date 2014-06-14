@@ -1,0 +1,218 @@
+/*
+ * This was inspired by http://www.brandonwalkin.com/
+ */
+body {
+	width: 100%;
+    font-weight: 400;
+	font-size: 18px;
+    font-family: $(fontFamily);
+	color: $(fontColor1);
+}
+html, body {
+    height: 100%;
+}
+#op-header-gradient, #op-header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+#op-header {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+	z-index: 10;
+	overflow: hidden;
+}
+#op-header-gradient {
+    z-index: -1;
+    opacity:  $(opacity);
+    background-size: cover;
+    background-color: $(bgColor1);
+    z-index: -1;
+}
+#op-header-bg {
+    background-size: cover;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    background-color: $(bgColor2);
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#op-header div.row {
+    padding-right: 0;
+}
+.section-title {
+    margin-top: 100px;
+}
+ul.footer {
+    list-style: none;
+    margin-left: 0;
+}
+ul.footer li a {
+    font-size: 90%;
+    color: rgba(255, 255, 255, .65);
+    display: inline-block;
+}
+ul.footer li a:hover {
+    color: #fff;
+}
+ul.footer li {
+    list-style: none;
+    margin-right: 15px;
+    display: inline;
+}
+.op-profile {
+    background-size: cover;
+    height: 100%;
+    background-image: url("$(bgImage)");
+}
+.op-bg-2 {
+    background-color: $(bgColor2);
+}
+
+#op-header .content {
+	padding: 20px;
+	padding-top: 10%;
+
+}
+p.op-text1 {
+	font-size: 100%;
+	font-weight: 100;
+	font-style: italic;
+	margin: 0 0 0;
+}
+h1.op-text2 {
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-weight: 100;
+	font-size: 200%;
+}
+h1.op-text3 {
+	margin-top: 40px;
+	margin-bottom: 30px;
+	font-size: 300%;
+}
+
+.subscribe-form input {
+	border: $(border);
+	border-color: $(borderColor);
+	border-radius: $(borderRadius);
+}
+.subscribe-form input:focus {
+	border-color: $(bgColor1);
+}
+.subscribe-form input[type="button"], .subscribe-form input[type="submit"], .subscribe-form button[type="button"], .subscribe-form button[type="submit"] {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition-property: background;
+	-moz-transition-property: background;
+	-o-transition-property: background;
+	transition-property: background;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	-o-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	background: $(bgColor3);
+	color: $(fontColor1);
+	text-shadow: none;
+	border: none;
+	padding: 5px 15px 5px 15px;;
+	height: 34px;
+	border: $(border);
+	border-color: $(borderColor);
+	border-radius: $(borderRadius);
+}
+.rebound-slide li {
+	display: inline-block;
+	background-size: contain;
+	position: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	top: 40px;
+	right: 0;
+	bottom: 100px;
+	left: 0;
+	text-align: center;
+}
+.rebound-slide-nav {
+	text-align: center;
+	position: absolute;
+	bottom: 32px;
+	left: 50%;
+	white-space: nowrap;
+}
+
+
+
+.fade {
+	position: fixed;
+	bottom: 0px;
+	height: 58px;
+	width: 150px;
+	pointer-events:none;
+}
+
+#rightFade {
+	right: 0; 
+	background-image: -moz-linear-gradient( 180deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%);
+	background-image: -webkit-linear-gradient( 180deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%);
+	background-image: -ms-linear-gradient( 180deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%);
+}
+
+#leftFade {
+	left: 0;
+	background-image: -moz-linear-gradient( 0deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%);
+	background-image: -webkit-linear-gradient( 0deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%);
+	background-image: -ms-linear-gradient( 0deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%);
+}
+
+#nav {
+	text-align: center;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	white-space: nowrap;
+}
+
+#nav li {
+	display: inline-block;
+	padding: 0 20px;
+	cursor: pointer;
+
+}
+#topLeft {
+	top:20px;
+	left: 20px;
+	z-index: 1;
+	position: fixed;
+	cursor: default;
+	background-color: $(bgColor1);
+}
+#topLeft p { 
+	margin: 0 0 0px;
+}
+#topLeft p.title {
+	color: $(fontColor2);
+}
+a {
+	color: $(fontColor2);
+	text-decoration: none;
+}
+a:hover {
+	color: $(fontColor1);
+	text-decoration: none;
+}
+#topLeft p.contact {
+	font-size: 12px;
+	
+}

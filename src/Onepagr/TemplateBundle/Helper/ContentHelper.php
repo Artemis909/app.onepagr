@@ -141,7 +141,8 @@ class ContentHelper {
             'css' => $css[0],
             'sections' => array(),
             'contents' => $contents,
-            'settings' => $settings
+            'settings' => $settings,
+			'baseUrl' => $this->getBaseUrl()
         );
 
         foreach ($contentSectionMap AS $key => $value) {
