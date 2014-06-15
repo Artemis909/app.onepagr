@@ -43,7 +43,7 @@ for ($i = 1; $i <= 10; $i++) {
 		'date' => '2014',
 		'thumbnail' => '##baseUrl##/media/resized/malick/250/' . $i . '.png',
 		'originalImage' => '##baseUrl##/media/background/malick/original/' . $i . '.png',
-		'largeImage' => '##baseUrl##/media/resized/malick/500/' . $i . '.png',
+		'largeImage' => '##baseUrl##/media/resized/malick/700_515/' . $i . '.png',
 		'downloadImage' => '##baseUrl##/media/resized/malick/500/' . $i . '.png',
 		'p' => 'Malick Ceesay'
 	);

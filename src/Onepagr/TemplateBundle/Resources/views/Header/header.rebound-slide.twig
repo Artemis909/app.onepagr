@@ -14,7 +14,7 @@
 	<div class="col-md-12 op-content">
 		<ul id="rebound-slide" class="rebound-slide col-md-12">
 			{% for item in contents.gallery.items %}
-			<li data-largesrc="{{ onepagr_asset(item.largeImage, baseUrl) }}" data-title="{{ item.h1|raw }}" data-description="{{ item.p|raw }}" style="background-image: url({{ onepagr_asset(item.originalImage, baseUrl) }});">
+			<li data-largesrc="{{ onepagr_asset(item.largeImage, baseUrl) }}" data-title="{{ item.h1|raw }}" data-description="{{ item.p|raw }}" style="background-image: url({{ onepagr_asset(item.largeImage, baseUrl) }});">
 
 			</li>
 			{% endfor %}

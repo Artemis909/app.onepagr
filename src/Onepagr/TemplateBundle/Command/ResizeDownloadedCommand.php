@@ -70,16 +70,18 @@ class ResizeDownloadedCommand extends ContainerAwareCommand {
 				
 
 						if ($image->width() > $image->height()) {
-							$width = null;
-						} else {
+							
 							$height = null;
+						} else {
+							$width = null;
 						}
 
 
+						
+						$image->resize($width, $height)->save($to);
 
-
-						$image->cropResize(200)
-								->save($to);
+						//$image->cropResize(200)
+								//->save($to);
 					
 					unset($image);
 				} else {
@@ -112,8 +114,17 @@ class ResizeDownloadedCommand extends ContainerAwareCommand {
 		);
 
 		$target = '/Users/pjabang/Projects/xam-image-creator/images/media/thumbnail/';
+		
+		$folders = array(
+			'/Users/pjabang/Projects/xam-image-creator/images/media/background/' => array(
+				'malick'
+			)
+		);
 
-		$sizes = array(array(300, 250));
+		$target = '/Users/pjabang/Projects/xam-image-creator/images/media/resized/700_515/';
+
+
+		$sizes = array(array(700, 515));
 		foreach ($folders AS $source => $array) {
 			foreach ($array AS $value) {
 				$folder = $source . $value;
