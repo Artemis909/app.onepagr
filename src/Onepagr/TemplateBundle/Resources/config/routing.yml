@@ -1,6 +1,6 @@
-onepagr_template_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: OnepagrTemplateBundle:Default:index }
+onepagr_websites:
+    pattern:  /{name}
+    defaults: { _controller: OnepagrTemplateBundle:Default:index, name: null }
 onepagr_template_timeline:
     pattern:  /timeline/{name}
     defaults: { _controller: OnepagrTemplateBundle:Default:timeline }

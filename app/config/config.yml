@@ -76,4 +76,8 @@ services:
         class: Onepagr\TemplateBundle\TwigExtension\AssetPathTwigExtension
         tags:
             - { name: twig.extension }
+    onepagr.page.response_listener:
+        class: Onepagr\TemplateBundle\EventListener\ResponseEventListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }
 

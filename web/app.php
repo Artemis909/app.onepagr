@@ -2,12 +2,16 @@
 
 use Symfony\Component\ClassLoader\ApcClassLoader;
 use Symfony\Component\HttpFoundation\Request;
+use Onepagr\TemplateBundle\Renderer\PageRenderer;
 
 $loader = require_once __DIR__.'/../app/bootstrap.php.cache';
 
 // Use APC for autoloading to improve performance.
 // Change 'sf2' to a unique prefix in order to prevent cache key conflicts
 // with other applications also using APC.
+$renderer = new PageRenderer();
+$renderer->setIndexDir(__DIR__ . '/indexes/');
+$renderer->render($_SERVER['HTTP_HOST']);
 
 $apcLoader = new ApcClassLoader('sf2', $loader);
 $loader->unregister();
