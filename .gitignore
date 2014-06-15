@@ -7,7 +7,7 @@
 /web/media/*
 /web/profile/*
 /web/indexes/*
-!/web/indexes/index.html
+!web/indexes/index.html
 !app/cache/.gitkeep
 !app/logs/.gitkeep
 /build/
