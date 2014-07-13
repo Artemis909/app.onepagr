@@ -1,0 +1,11 @@
+<section id="{{ section.contentId }}" class="section section-top-spacer container-fluid">
+	<div class="row-fluid">
+		<div class="{{ section.content.profileCss }}">
+			<p>{{ section.content.data.profile|raw }}</p>
+		</div>
+		<div class="{{ section.content.contentCss }}">
+			<h1>{{ section.content.data.h1|raw }}</h1>
+			<div>{{ section.content.data.p|raw }}</div>
+		</div>
+	</div>
+</section>

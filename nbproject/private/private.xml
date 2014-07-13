@@ -2,6 +2,11 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Library/WebServer/Documents/app.onepagr/web/template/css/timeline/style.timeline.dotted.template.css</file>
+            <file>file:/Library/WebServer/Documents/app.onepagr/src/Onepagr/TemplateBundle/Resources/views/Timeline/timeline.dotted.twig</file>
+            <file>file:/Library/WebServer/Documents/app.onepagr/src/Onepagr/TemplateBundle/Resources/views/Timeline/timeline.images.responsive.twig</file>
+            <file>file:/Library/WebServer/Documents/app.onepagr/src/Onepagr/TemplateBundle/Resources/examples/portfolio-full-one.php</file>
+        </group>
     </open-files>
 </project-private>

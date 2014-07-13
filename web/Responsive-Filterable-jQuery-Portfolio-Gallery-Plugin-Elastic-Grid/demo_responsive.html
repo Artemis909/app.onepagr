@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery Elastic Grid Plugin Demo</title>
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="css/elastic_grid.min.css" />
+    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+<body style="background:#fff;">
+<div id="jquery-script-menu">
+<div class="jquery-script-center">
+<ul>
+<li><a href="http://www.jqueryscript.net/layout/Responsive-Filterable-jQuery-Portfolio-Gallery-Plugin-Elastic-Grid.html">Download This Plugin</a></li>
+<li><a href="http://www.jqueryscript.net/">Back To jQueryScript.Net</a></li>
+</ul>
+<div class="jquery-script-ads"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+<h1 style="margin:150px auto 50px auto">jQuery Elastic Grid Plugin Demo</h1>
+<div id="elastic_grid_demo"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/classie.js"></script>
+<script type="text/javascript" src="js/elastic_grid.encode.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $("#elastic_grid_demo").elastic_grid({
+            'filterEffect': 'popup', // moveup, scaleup, fallperspective, fly, flip, helix , popup
+            'hoverDirection': true,
+            'hoverDelay': 0,
+            'hoverInverse': false,
+            'expandingSpeed': 500,
+            'expandingHeight': 500,
+            'items' :
+            [
+                {
+                    'title'         : 'Azuki bean',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/1.jpg', 'images/small/2.jpg', 'images/small/3.jpg', 'images/small/10.jpg', 'images/small/11.jpg'],
+                    'large'         : ['images/large/1.jpg', 'images/large/2.jpg', 'images/large/3.jpg', 'images/large/10.jpg', 'images/large/11.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Portrait']
+                },
+                {
+                    'title'         : 'Swiss chard pumpkin',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/4.jpg', 'images/small/5.jpg', 'images/small/6.jpg', 'images/small/7.jpg'],
+                    'large'         : ['images/large/4.jpg', 'images/large/5.jpg', 'images/large/6.jpg', 'images/large/7.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Landscape']
+                },
+                {
+                    'title'         : 'Spinach winter purslane',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/15.jpg','images/small/8.jpg', 'images/small/9.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/15.jpg','images/large/8.jpg', 'images/large/9.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Portrait', 'Landscape']
+                },
+                {
+                    'title'         : 'Aubergine napa cabbage',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/12.jpg', 'images/small/13.jpg', 'images/small/14.jpg', 'images/small/15.jpg', 'images/small/16.jpg'],
+                    'large'         : ['images/large/12.jpg', 'images/large/13.jpg', 'images/large/14.jpg', 'images/large/15.jpg', 'images/large/16.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Portrait']
+                },
+                {
+                    'title'         : 'Swiss chard pumpkin',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/17.jpg', 'images/small/18.jpg', 'images/small/19.jpg', 'images/small/20.jpg'],
+                    'large'         : ['images/large/17.jpg', 'images/large/18.jpg', 'images/large/19.jpg', 'images/large/20.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Landscape']
+                },
+                {
+                    'title'         : 'Spinach winter purslane',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/13.jpg','images/small/15.jpg', 'images/small/11.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/13.jpg','images/large/15.jpg', 'images/large/11.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Vintage']
+                },
+                {
+                    'title'         : 'Spinach winter purslane',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/7.jpg','images/small/8.jpg', 'images/small/9.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/7.jpg','images/large/8.jpg', 'images/large/9.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Portrait']
+                },
+                {
+                    'title'         : 'Azuki bean',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/16.jpg', 'images/small/13.jpg', 'images/small/14.jpg', 'images/small/15.jpg', 'images/small/16.jpg'],
+                    'large'         : ['images/large/16.jpg', 'images/large/13.jpg', 'images/large/14.jpg', 'images/large/15.jpg', 'images/large/16.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Vintage']
+                },
+                {
+                    'title'         : 'Swiss chard pumpkin',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/18.jpg', 'images/small/18.jpg', 'images/small/19.jpg', 'images/small/20.jpg'],
+                    'large'         : ['images/large/18.jpg', 'images/large/18.jpg', 'images/large/19.jpg', 'images/large/20.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Landscape']
+                },
+                {
+                    'title'         : 'Winter purslane',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/11.jpg','images/small/15.jpg', 'images/small/11.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/11.jpg','images/large/15.jpg', 'images/large/11.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Portrait']
+                },
+                {
+                    'title'         : 'Spinach winter purslane',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/3.jpg','images/small/15.jpg', 'images/small/11.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/3.jpg','images/large/15.jpg', 'images/large/11.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Vintage']
+                },
+                {
+                    'title'         : 'Spinach winter purslane',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/5.jpg','images/small/8.jpg', 'images/small/9.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/5.jpg','images/large/8.jpg', 'images/large/9.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Portrait', 'Landscape']
+                },
+                {
+                    'title'         : 'Azuki bean',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/6.jpg', 'images/small/13.jpg', 'images/small/14.jpg', 'images/small/15.jpg', 'images/small/16.jpg'],
+                    'large'         : ['images/large/6.jpg', 'images/large/13.jpg', 'images/large/14.jpg', 'images/large/15.jpg', 'images/large/16.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Vintage']
+                },
+                {
+                    'title'         : 'Swiss chard pumpkin',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/8.jpg', 'images/small/18.jpg', 'images/small/19.jpg', 'images/small/20.jpg'],
+                    'large'         : ['images/large/8.jpg', 'images/large/18.jpg', 'images/large/19.jpg', 'images/large/20.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Landscape']
+                },
+                {
+                    'title'         : 'Spinach winter purslane',
+                    'description'   : 'Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage soko coriander sweet pepper water spinach winter purslane shallot tigernut lentil beetroot.Swiss chard pumpkin bunya nuts maize plantain aubergine napa cabbage.',
+                    'thumbnail'     : ['images/small/9.jpg','images/small/15.jpg', 'images/small/11.jpg', 'images/small/10.jpg'],
+                    'large'         : ['images/large/9.jpg','images/large/15.jpg', 'images/large/11.jpg', 'images/large/10.jpg'],
+                    'button_list'   :
+                    [
+                        { 'title':'Demo', 'url' : 'http://www.jqueryscript.net' },
+                        { 'title':'Download', 'url':'http://www.jqueryscript.net'}
+                    ],
+                    'tags'          : ['Vintage', 'Landscape']
+                }
+
+            ]
+        });
+    });
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

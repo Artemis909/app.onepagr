@@ -1,6 +1,8 @@
-{% extends 'OnepagrTemplateBundle::layout.html.twig' %}
-{% block body %}
 <div class="container">
+	    <div class="row text-center section-title">
+        <h1 id="timeline">Timeline 2.1</h1>
+    </div>
+	
 	<div class="row">
 		<div class="timeline-centered">
 
@@ -78,9 +80,3 @@
 		</div>
 	</div>
 </div>
-{% endblock %}
-{% block stylesheets %}
-{{ parent() }}
-
-<link href="{{ asset('bundles/onepagrtemplate/css/templates/timeline/timeline.dotted.css') }}" rel="stylesheet" />
-{% endblock %}

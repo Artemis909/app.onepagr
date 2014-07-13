@@ -138,7 +138,7 @@ class ContentHelper {
 	}
 
 	public function cacheIndex($content, $domain) {
-		$dir =  $this->getIndexDir() . '/' . $domain;
+		$dir = $this->getIndexDir() . '/' . $domain;
 		$path = $dir . '/index.html';
 		if (!file_exists($dir)) {
 
@@ -146,11 +146,10 @@ class ContentHelper {
 				// echo $dir;
 			}
 		}
-		
+
 		if (file_exists($dir)) {
 			file_put_contents($path, $content);
 		}
-		
 	}
 
 	public function getViewData($palette) {
@@ -164,6 +163,7 @@ class ContentHelper {
 		// print_r($palette);
 		$viewData = array(
 			'css' => $css[0],
+			'cssList' => $css,
 			'sections' => array(),
 			'contents' => $contents,
 			'settings' => $settings,
@@ -174,6 +174,13 @@ class ContentHelper {
 			$viewData['sections'][$key] = $value;
 
 			$viewData['sections'][$key]['content'] = $contents[$value['contentId']];
+			if (isset($viewData['sections'][$key]['content']['data']) && ($viewData['sections'][$key]['content']['data'])) {
+				foreach ($viewData['sections'][$key]['content']['data'] AS $dataKey => $data) {
+					if (is_string($data)) {
+						$viewData['sections'][$key]['content']['data'][$dataKey] = str_replace('##baseUrl##', $viewData['baseUrl'], $data);
+					}
+				}
+			}
 			// $viewData['sections'][$key]['template'] = $contents[$value['contentId']][''];
 		}
 

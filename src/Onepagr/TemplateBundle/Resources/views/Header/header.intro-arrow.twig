@@ -1,0 +1,34 @@
+{% block opheader %}
+<section id="op-header-bg" class=""></section>
+<section id="{{ section.content.id_2 }}" class="{{ section.content.class_2 }}"></section>
+<section id="op-header" class="container-fluid theme-showcase content gradient" role="main" id="top">
+	<div class="row content text-center center-block">
+
+		<h1 class="op-h-bordered wow fadeInLeft animated animated op-editable" data-wow-delay="0.3s">
+			{{ section.content.data.h1 }}
+		</h1>
+
+		<h3 class="op-h-bordered wow fadeIn animated animated op-editable" data-wow-delay="1s">
+			{{ section.content.data.h2 }}
+		</h3>
+		<div id="" class="arrow-block">
+			<span class="down-arrow"></span>
+		</div>
+	</div>
+</section>
+
+<script src="{{ asset('assets/main/js/wow.min.js') }}"></script>
+<link href="{{ css }}" rel="stylesheet" />
+<style>
+
+</style>
+<script>
+$(function() {
+
+
+	new WOW().init();
+
+
+});
+</script>
+{% endblock %}

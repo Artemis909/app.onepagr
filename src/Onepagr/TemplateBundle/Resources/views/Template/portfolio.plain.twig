@@ -6,5 +6,18 @@
 {% endblock %}
 {% block footerscript %}
 {{ parent() }}
+{% for _css in cssList %}
+<link href="{{ _css }}" rel="stylesheet" />
+{% endfor %}
+<script src="{{ asset('assets/main/js/waypoints.min.js') }}"></script>
+<script>
+$(function() {
+
+	$('header').waypoint(function() {
+		$(this).addClass('navbar-fixed-top');
+	}, {offset: 30});
+
+});
+</script>
 
 {% endblock %}

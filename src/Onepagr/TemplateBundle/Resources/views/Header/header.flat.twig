@@ -4,56 +4,38 @@
 <section id="op-header" class="container-fluid theme-showcase content gradient" role="main" id="top">
 	<div class="row content text-center center-block">
 
-		<ul class="op-list op-hide" id="typed-strings" style="display:none">
-			<li>Hi</li>
-			<li>My name is James Smith</li>
-			<li>I am a twenty year old front-end web developer from St Albans, currently studying web design at Southampton Solent University</li>
-			<li>I'm currently available for freelance work</li>
-			<li>I'm also looking for a summer internship for July-September</li>
-			<li>You can reach me on me@jamessmitch.co.uk</li>
-			<li>Thank you</li>
-		</ul>
-		<div class="text-editor-wrap" data-wow-duration="5s">
-			<div class="title-bar"><span class="title">about-me.js — bash — 80x<span class="terminal-height">25</span></span></div>
-			<div class="text-body">
-				$ <span id="typed"></span>
-			</div>
-		</div>
+		<p id="intro" class="wow fadeInLeft animated animated op-editable" data-wow-delay="0.1s" style="visibility: visible;-webkit-animation-delay: 0.1s; -moz-animation-delay: 0.1s; animation-delay: 0.1s;"><span>Introducing</span> Onepagr</p>
+             
+					
+				<h1 class="op-h-bordered wow fadeInLeft animated animated op-editable" data-wow-delay="0.3s" style="visibility: visible;-webkit-animation-delay: 0.3s; -moz-animation-delay: 0.3s; animation-delay: 0.3s;">Build A Beautiful Web With Simplicity</h1>
+				
+				<p id="beta-invite" class="op-h-bordered wow fadeIn animated animated op-editable" data-wow-delay="1s" style="visibility: visible;-webkit-animation-delay: 1s; -moz-animation-delay: 1s; animation-delay: 1s;">
+                    We're launching into a closed <strong>beta</strong> soon!
+                    <span>Enter your email below to secure a spot.</span>
+                </p>
+                <div id="requestInvite" class="">
+                    <form method="post" name="mc-embedded-subscribe-form" action="http://onepagr.us8.list-manage.com/subscribe/post?u=8ac8f7e2595065bfb4aff98da&amp;id=48e2551f38" role="form" class="form-inline" novalidate>
+                        <div class="form-group">
+                            <input type="text" name="EMAIL" class="form-control col-md-5 col-lg-5" placeholder="Your email address" required />
+						</div>
+
+						<button type="submit" class="btn btn-primary op-editable" value="Request your invite">Request your invite</button>
+						<div style="position: absolute; left: -5000px;"><input type="text" name="b_8ac8f7e2595065bfb4aff98da_48e2551f38" value=""></div>
+                    </form>
+
+                </div>
 	</div>
 </section>
-<section id="footer" class="footer centered center-block text-center wow animated fadeIn" data-wow-duration="5s" data-wow-delay="1s" style="display: none">
-	<ul>
-		<li><a href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></li>
-		<li><a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a></li>
-		<li><a href="#" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a></li>
-	</ul>
-</section>
 
-<script src="{{ asset('bundles/onepagrtemplate/js/typed.js') }}"></script>
-<script src="{{ asset('bundles/onepagrtemplate/js/wow.min.js') }}"></script>
-<link href="{{ asset('bundles/onepagrtemplate/css/templates/header/header.flat.css') }}" rel="stylesheet" />
+
+<script src="{{ asset('assets/main/js/wow.min.js') }}"></script>
+<link href="{{ css }}" rel="stylesheet" />
 <style>
 
 </style>
 <script>
 $(function() {
-	var typedStrings = [];
-	$("#typed-strings li").each(function() {
-		typedStrings.push($(this).text());
-		console.log(typedStrings);
-		if ($(this).is(':last-child')) {
-			console.log(typedStrings);
-			$("#typed").typed({
-				strings: typedStrings,
-				typeSpeed: 30, // typing speed
-				backDelay: 0, // pause before backspacing
-				callback: function() {
-					$('#footer').show();
-					$(".text-body").css('height', '150px');
-				}
-			});
-		}
-	});
+
 
 	new WOW().init();
 
