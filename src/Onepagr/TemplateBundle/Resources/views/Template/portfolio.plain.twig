@@ -10,12 +10,31 @@
 <link href="{{ _css }}" rel="stylesheet" />
 {% endfor %}
 <script src="{{ asset('assets/main/js/waypoints.min.js') }}"></script>
+<script src="{{ asset('assets/jquery/jquery.easings.min.js') }}"></script>
+<script src="{{ asset('assets/jquery/jquery.slimscroll.min.js') }}"></script>
+<script src="{{ asset('assets/jquery/jquery.fullPage.min.js') }}"></script>
 <script>
 $(function() {
 
 	$('header').waypoint(function() {
 		$(this).addClass('navbar-fixed-top');
 	}, {offset: 30});
+
+
+
+	$('#header').waypoint(function() {
+		$("#toTop").hide();
+	}, {offset: 30});
+
+	$('#about').waypoint(function() {
+		$("#toTop").show();
+	});
+	
+	$("#toTop").click(function() {
+		$("#toTop").hide();
+	});
+
+	// $('section').fullpage();
 
 });
 </script>

@@ -11,21 +11,12 @@
 		</div>
 		<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 			<ul class="nav navbar-nav">
-				<li class="cl-effect-21">
-					<a href="" class="">Home</a>
+				{% for item in settings.menu %}
+				<li class="{{ item.class }}">
+					<a href="{{ item.href }}" class="">{{ item.label }}</a>
 				</li>
-				<li class="cl-effect-2">
-					<a href="">About Us</a>
-				</li>
-				<li>
-					<a href="#">Services</a>
-				</li>
-				<li>
-					<a href="#">Portfolio</a>
-				</li>
-				<li>
-					<a href="#">Work</a>
-				</li>
+				{% endfor %}
+				
 			</ul>
 			<!--
 		  <ul class="nav navbar-nav navbar-right">

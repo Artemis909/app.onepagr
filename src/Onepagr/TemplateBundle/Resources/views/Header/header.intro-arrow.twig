@@ -1,7 +1,7 @@
 {% block opheader %}
 <section id="op-header-bg" class=""></section>
 <section id="{{ section.content.id_2 }}" class="{{ section.content.class_2 }}"></section>
-<section id="op-header" class="container-fluid theme-showcase content gradient" role="main" id="top">
+<section id="{{ section.content.id }}" class="container-fluid theme-showcase content gradient" role="main" id="top">
 	<div class="row content text-center center-block">
 
 		<h1 class="op-h-bordered wow fadeInLeft animated animated op-editable" data-wow-delay="0.3s">
@@ -12,7 +12,7 @@
 			{{ section.content.data.h2 }}
 		</h3>
 		<div id="" class="arrow-block">
-			<span class="down-arrow"></span>
+			<a href="{{ settings.menuFirstScroll.href }}"class="down-arrow"></a>
 		</div>
 	</div>
 </section>
@@ -27,6 +27,14 @@ $(function() {
 
 
 	new WOW().init();
+	$('a[href^=#]').click(function(e) {
+		var name = $(this).attr('href').substr(1);
+		var pos = $('#' + name).offset();
+		$('body').animate({scrollTop: pos.top}, 700, 'easeInQuart');
+		// alert('hey');
+		e.preventDefault();
+		return false;
+	});
 
 
 });
