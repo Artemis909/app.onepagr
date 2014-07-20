@@ -1,0 +1,17 @@
+.carousel-inner {
+
+	width: 80%;
+	margin: auto;
+}
+.carousel-indicators li {
+	border-color: #ccc;
+	background-color: transparent;
+}
+
+.carousel-indicators li.active {
+	background-color: #ccc;
+}
+.carousel-inner {
+	padding-bottom: 20px;
+	min-height: 180px;
+}

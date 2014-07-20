@@ -22,6 +22,7 @@
             </script>
             <link href="{{ css }}" rel="stylesheet" />
             <script src="{{ asset('assets/jquery/jquery.min.js') }}"></script>
+			<script src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
             <script src="{{ asset('assets/main/js/modernizr.custom.js') }}"></script>
 			
             <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -46,7 +47,7 @@
             <link href="{{ asset('assets/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" media="screen">
 
 		{% endblock %}
-		<a id="toTop" href="#header" style="display: inline;"><span id="toTopHover"></span><img width="40" height="40" alt="To Top" src="{{ asset('media/to-top.png') }}"></a>
+		<a id="toTop" href="#header" style="display: inline;" class="op-scrollable"><span id="toTopHover"></span><img width="40" height="40" alt="To Top" src="{{ asset('media/to-top.png') }}"></a>
         </body>
     </html>
 {% endspaceless %}

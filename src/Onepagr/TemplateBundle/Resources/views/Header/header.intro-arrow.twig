@@ -12,7 +12,7 @@
 			{{ section.content.data.h2 }}
 		</h3>
 		<div id="" class="arrow-block">
-			<a href="{{ settings.menuFirstScroll.href }}"class="down-arrow"></a>
+			<a href="{{ settings.menuFirstScroll.href }}"class="op-scrollable down-arrow"></a>
 		</div>
 	</div>
 </section>
@@ -27,12 +27,24 @@ $(function() {
 
 
 	new WOW().init();
-	$('a[href^=#]').click(function(e) {
-		var name = $(this).attr('href').substr(1);
-		var pos = $('#' + name).offset();
-		$('body').animate({scrollTop: pos.top}, 700, 'easeInQuart');
-		// alert('hey');
+
+	$('a.op-scrollable[href^=#]').click(function(e) {
 		e.preventDefault();
+
+		var name = $(this).attr('href').substr(1);
+		/**
+		 var pos = $('#' + name).offset();
+		 $('body,html').animate({scrollTop: pos.top}, 700, 'easeInQuart');
+		 // alert(pos.top);
+		 // alert('hey');
+		 
+		 **/
+		$('#' + name).animatescroll();
+		$('.collapse').collapse('hide')
+		// Detect if pushState is available
+		if (history.pushState) {
+			history.pushState(null, null, $(this).attr('href'));
+		}
 		return false;
 	});
 

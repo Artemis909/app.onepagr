@@ -1,0 +1,53 @@
+<section id="portfolio" class="op-list">
+	<div class="container">
+		<!-- row -->
+		<div class="row">
+			
+			<div class="section-title">
+				<h1 class="">{{ section.content.data.h1 }}</h1>
+			</div>
+			<ul class="thumbs">
+				{% for item in section.content.list.items %}
+				<li>
+					<a href="#thumb{{ loop.index }}" class="thumbnail" style="background-image: url('{{ item.thumbnail }}')">
+						<h4>{{ item.h1 }}</h4>
+						<span class="description">{{ item.h2 }}</span>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+
+			<div class="portfolio-content">
+				{% for item in section.content.list.items %}
+				<div id="thumb{{ loop.index }}" style="height: 450px;">
+					<div class="media">
+						{{ item.main|raw }}
+					</div>
+					<h1>{{ item.h1 }}</h1>
+					<div class="portfolio-detail">{{ item.detail|raw }}</div>
+					<div class="portfolio-footer">{{ item.footer|raw }}</div>
+					
+				</div>
+				{% endfor %}
+				
+			</div>
+		</div>
+	</div>
+</section>
+<style>
+	ul.thumbs li.content {
+		height:  450px !important;
+		list-style-type: none;
+	}
+</style>
+<script src="{{ asset('assets/jquery/portfolio.jquery.min.js') }}"></script>
+<script>
+$(function() {
+
+	$('.thumbs').portfolio({
+		cols: 4,
+		transition: 'slideDown'
+	});
+
+});
+</script>

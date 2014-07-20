@@ -13,7 +13,7 @@
 			<ul class="nav navbar-nav">
 				{% for item in settings.menu %}
 				<li class="{{ item.class }}">
-					<a href="{{ item.href }}" class="">{{ item.label }}</a>
+					<a href="{{ item.href }}" class="op-scrollable" tabindex="{{ loop.index }}">{{ item.label }}</a>
 				</li>
 				{% endfor %}
 				

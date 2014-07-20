@@ -62,7 +62,9 @@ $_return['contents']['header'] = array(
 		'h3' => "Build A Beautiful Web With Simplicity",
 		"p" => "We're launching into a closed <strong>beta</strong> soon!
                     <span>Enter your email below to secure a spot.</span>",
-		"colsize" => "col-md-6"
+		"colsize" => "col-md-6",
+		"button" => "",
+		"arrow" => "",
 	)
 );
 
@@ -282,8 +284,7 @@ $_return['palettes'][0] = array(
 	'themeColor' => '#2C82C9',
 	'name' => 'Happy Blue',
 	'bgColor1' => 'rgb(21, 40, 54)', // #1D1A21
-	'bgImage' => '##baseUrl##/media/svg/mesh.svg',
-	// 'bgImage' => '##baseUrl##/media/background/chalkboard/chalkboard-black.jpg',
+	'bgImage' => '##baseUrl##/media/svg/suithire.svg',
 	'bgImage4' => '##baseUrl##/media/svg/arrows/down.svg',
 	'bgImage2' => '##baseUrl##/media/background/picjumbo/6_Water_Food/IMG_6152.jpg',
 	'bgColor2' => 'rgba(255,255,255,.65)',

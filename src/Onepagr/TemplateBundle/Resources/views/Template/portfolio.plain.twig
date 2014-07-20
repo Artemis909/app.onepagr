@@ -3,7 +3,9 @@
 {% for section in sections %}
 {% include section.content.template with {'section' : section} %}
 {% endfor %}
+
 {% endblock %}
+
 {% block footerscript %}
 {{ parent() }}
 {% for _css in cssList %}
@@ -13,6 +15,7 @@
 <script src="{{ asset('assets/jquery/jquery.easings.min.js') }}"></script>
 <script src="{{ asset('assets/jquery/jquery.slimscroll.min.js') }}"></script>
 <script src="{{ asset('assets/jquery/jquery.fullPage.min.js') }}"></script>
+<script src="{{ asset('assets/jquery/animatescroll.min.js') }}"></script>
 <script>
 $(function() {
 
@@ -22,14 +25,16 @@ $(function() {
 
 
 
+
+	// $('body').animatescroll();
 	$('#header').waypoint(function() {
 		$("#toTop").hide();
-	}, {offset: 30});
+	});
 
 	$('#about').waypoint(function() {
 		$("#toTop").show();
-	});
-	
+	}, {offset: -10});
+
 	$("#toTop").click(function() {
 		$("#toTop").hide();
 	});

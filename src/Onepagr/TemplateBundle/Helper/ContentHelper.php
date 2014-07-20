@@ -175,16 +175,36 @@ class ContentHelper {
 
 			$viewData['sections'][$key]['content'] = $contents[$value['contentId']];
 			if (isset($viewData['sections'][$key]['content']['data']) && ($viewData['sections'][$key]['content']['data'])) {
-				foreach ($viewData['sections'][$key]['content']['data'] AS $dataKey => $data) {
-					if (is_string($data)) {
-						$viewData['sections'][$key]['content']['data'][$dataKey] = str_replace('##baseUrl##', $viewData['baseUrl'], $data);
-					}
+				$viewData['sections'][$key]['content']['data'] = $this->updateUrl($viewData['sections'][$key]['content']['data'], $viewData['baseUrl']);
+			}
+
+			if (isset($viewData['sections'][$key]['content']['listId'])) {
+				$listId = $viewData['sections'][$key]['content']['listId'];
+				if (isset($contents['__lists'][$listId])) {
+					$contents['__lists'][$listId]['items'] = $this->updateUrl($contents['__lists'][$listId]['items'], $viewData['baseUrl']);
+					$viewData['sections'][$key]['content']['list'] = $contents['__lists'][$listId];
 				}
 			}
 			// $viewData['sections'][$key]['template'] = $contents[$value['contentId']][''];
 		}
 
+
+
 		return $viewData;
+	}
+
+	public function updateUrl($list, $url) {
+		
+		if ($list && is_array($list)) {
+			foreach ($list AS $dataKey => $data) {
+				if (is_string($data)) {
+					$list[$dataKey] = str_replace('##baseUrl##', $url, $data);
+				} else if(is_array($data)) {
+					$list[$dataKey] = $this->updateUrl($data, $url);
+				}
+			}
+		}
+		return $list;
 	}
 
 }

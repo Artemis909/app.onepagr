@@ -1,6 +1,10 @@
 header {
 	background: $(bgColor3);
 }
+.navbar-toggle .icon-bar {
+	background-color: $(color10);
+}
+
 
 *,
 *:after,
@@ -17,8 +21,14 @@ body {
 .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus
 {
 	/**color:#333;**/
-	background-color:transparent
+	background-color: inherit;
 }
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: inherit;
+	color: $(fontColor3);
+}
+
 nav a {
 	position: relative;
 	display: inline-block;
@@ -84,7 +94,9 @@ nav a:focus {
 .cl-effect-1 a:hover::before,
 .cl-effect-1 a:hover::after,
 .cl-effect-1 a:focus::before,
-.cl-effect-1 a:focus::after {
+.cl-effect-1 a:focus::after,
+.cl-effect-1 a:active::before,
+.cl-effect-1 a:active::after {
 	opacity: 1;
 	-webkit-transform: translateX(0px);
 	-moz-transform: translateX(0px);
