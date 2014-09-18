@@ -1,5 +1,5 @@
 onepagr_websites:
-    pattern:  /{name}
+    pattern:  /sites/{name}
     defaults: { _controller: OnepagrTemplateBundle:Default:index, name: null }
 onepagr_template_timeline:
     pattern:  /timeline/{name}

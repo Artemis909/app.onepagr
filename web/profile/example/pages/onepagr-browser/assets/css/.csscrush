@@ -6,21 +6,20 @@
         "datem_sum": 1401458264,
         "options": {
             "vars": {
-                "themeColor": "#2C82C9",
-                "name": "Happy Blue",
-                "bgColor1": "#2C82C9",
+                "themeColor": "#2CC990",
+                "name": "Calm Green",
+                "bgColor1": "#2CC990",
                 "bgImage": "..\/img\/mockups.svg",
-                "bgImage2": "..\/img\/fruit_1.jpg",
+                "bgImage2": "..\/img\/fruit_2.jpg",
                 "bgColor2": "#363F48",
                 "fontColor1": "#fff",
                 "fontColor2": "#fff",
                 "fontColor3": "#000",
                 "fontColor4": "rgba(255,255,255,.65)",
                 "opacity": 0.85,
-                "borderRadius": "4px",
-                "border": "0",
+                "borderRadius": "0px",
+                "border": "1px solid",
                 "borderColor": "#fff",
-                "borderRadius2": "8px",
                 "fontName": "Raleway",
                 "fontFamily": "'Raleway', sans-serif;"
             },
@@ -32,6 +31,7 @@
             "versioning": true,
             "boilerplate": true,
             "cache": true,
+            "context": null,
             "doc_root": null,
             "vendor_target": "all",
             "rewrite_import_urls": true,
@@ -45,10 +45,7 @@
 
             ],
             "source_map": false,
-            "newlines": "use-platform",
-            "global_vars": [
-
-            ]
+            "newlines": "use-platform"
         }
     }
 }

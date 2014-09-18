@@ -267,7 +267,7 @@
         "imports": [
 
         ],
-        "datem_sum": 1403941844,
+        "datem_sum": 1407422485,
         "options": {
             "vars": {
                 "themeColor": "#2CC990",
@@ -297,6 +297,7 @@
             "versioning": true,
             "boilerplate": true,
             "cache": true,
+            "context": null,
             "doc_root": null,
             "vendor_target": "all",
             "rewrite_import_urls": true,
@@ -310,10 +311,7 @@
 
             ],
             "source_map": false,
-            "newlines": "use-platform",
-            "global_vars": [
-
-            ]
+            "newlines": "use-platform"
         }
     },
     "header.0_2.style.crush.css": {

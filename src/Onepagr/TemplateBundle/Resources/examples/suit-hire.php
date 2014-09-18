@@ -3,9 +3,9 @@
 $_return = array();
 $_return['settings'] = array(
 	'meta' => array(
-		'title' => 'Malick Ceesay',
-		'description' => 'Malick Ceesay',
-		'keywords' => 'African artist'
+		'title' => 'Suit Hire',
+		'description' => 'Suit Hire template',
+		'keywords' => 'Suit Hire Template'
 	),
 	'font' => array(
 		'fontName' => "Lato",

@@ -20,7 +20,10 @@
 		"sensio/generator-bundle": "~2.3",
 		"incenteev/composer-parameter-handler": "~2.0",
 		"css-crush/css-crush": "dev-master",
-		"gregwar/image": "dev-master"
+		"gregwar/image": "dev-master",
+		"nedwave/user-bundle": "*",
+		"hwi/oauth-bundle": "0.4.*@dev",
+		"jordillonch/crud-generator": "dev-master"
 	},
 	"scripts": {
 		"post-install-cmd": [

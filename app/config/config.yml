@@ -5,6 +5,7 @@ imports:
 framework:
     #esi:             ~
     #translator:      { fallback: "%locale%" }
+    translator: { fallback: en }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -28,6 +29,9 @@ framework:
 twig:
     debug:            "%kernel.debug%"
     strict_variables: "%kernel.debug%"
+    form:
+        resources:
+            - LexikFormFilterBundle:Form:form_div_layout.html.twig
 
 # Assetic Configuration
 assetic:
@@ -80,4 +84,16 @@ services:
         class: Onepagr\TemplateBundle\EventListener\ResponseEventListener
         tags:
             - { name: kernel.event_listener, event: kernel.response, method: onKernelResponse }
+
+# Nedwave User Bundle
+nedwave_user:
+    user_class: Onepagr\UserBundle\Entity\User
+    firewall_name: main
+
+nedwave_mandrill:
+    api_key: %mandrill_api_key%
+    default:
+        sender: onepagr@gmail.com
+        sender_name: Essa
+
 

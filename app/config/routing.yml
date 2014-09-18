@@ -1,3 +1,15 @@
+ideallio_user:
+    resource: "@IdeallioUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
+onepagr_app:
+    resource: "@OnepagrAppBundle/Resources/config/routing.yml"
+    prefix:   /
+
+onepagr_user:
+    resource: "@OnepagrUserBundle/Resources/config/routing.yml"
+    prefix:   /
+
 onepagr_css:
     resource: "@OnepagrCssBundle/Resources/config/routing.yml"
     prefix:   /css
@@ -7,10 +19,21 @@ onepagr_builder:
 
 onepagr_template:
     resource: "@OnepagrTemplateBundle/Resources/config/routing.yml"
-    prefix:   /
+    prefix:   /template
+onepagr_app:
+    resource: "@OnepagrAppBundle/Resources/config/routing.yml"
+    prefix:   /app
+onepagr_user:
+    resource: "@OnepagrUserBundle/Resources/config/routing.yml"
+    prefix:   /admin
 #onepagr_template_prefix:
 #    resource: "@OnepagrTemplateBundle/Resources/config/routing.yml"
 #    prefix:   /template
-
+nedwave_user:
+    resource: "@NedwaveUserBundle/Resources/config/routing.yml"
+    prefix:   /nedwave
+OnepagrAppBundle_page:
+        resource: "@OnepagrAppBundle/Resources/config/routing/page.yml"
+        prefix:   /pages
 
 
