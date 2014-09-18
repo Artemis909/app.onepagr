@@ -1,0 +1,40 @@
+{% extends 'OnepagrUserBundle:User:base.html.twig' %}
+{% block form %}
+<div class="container">
+
+	<div class="row padding-top" style="">
+		<div class="col-xs-12 col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3">
+			<div id="registration-form">
+				<h1>Welcome Back!</h1>
+				<h6>Log in to your Onepagr dashboard.</h6>
+				{% if error %}
+				<p>{{ error.message|trans }}</p>
+				{% endif %}
+				<form role="form" id="" action="{{ path('onepagr_login_check') }}" method="post">
+					<fieldset>
+
+						<div class="form-group">
+							<input type="text" name="_username" id="username" class="form-control input-lg" placeholder="Username" value="{{ last_username }}" />
+						</div>
+						<div class="form-group">
+							<input type="password" name="_password" id="password" class="form-control input-lg" placeholder="Password">
+						</div>
+
+						<div class="row">
+							<div class="col-xs-12 col-sm-12 col-md-6 pull-right">
+								<input type="submit" class="btn btn-lg btn-success btn-block" value="Sign In">
+							</div>
+
+						</div>
+					</fieldset>
+					<p><a target="_blank" href="#">Forgot your password?</a> </p>
+
+				</form>
+			</div>
+			<div class="footnote"><h3>Don't have an account ? <a target="_self" class="redirect" href="{{ path('onepagr_user_register')}}">Sign up for free!</a></h3></div>
+
+		</div>
+	</div>
+
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+user:
+    pattern:  /
+    defaults: { _controller: "OnepagrUserBundle:User:index" }
+
+user_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "OnepagrUserBundle:User:show" }
+
+user_new:
+    pattern:  /new
+    defaults: { _controller: "OnepagrUserBundle:User:new" }
+
+user_create:
+    pattern:  /create
+    defaults: { _controller: "OnepagrUserBundle:User:create" }
+    requirements: { _method: post }
+
+user_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "OnepagrUserBundle:User:edit" }
+
+user_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "OnepagrUserBundle:User:update" }
+    requirements: { _method: post|put }
+
+user_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "OnepagrUserBundle:User:delete" }
+    requirements: { _method: post|delete }

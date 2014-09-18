@@ -1,0 +1,33 @@
+{% extends 'OnepagrAppBundle::builder.layout.html.twig' %}
+{% block body %}
+<section id="header" class="section container-fluid">
+	<div class="row-fluid">
+		<div class="col-md-12 op-content-editable" content-group="test1">
+			
+		</div>
+	</div>
+</section>
+
+<div id="op-templates">
+	<nav class="main-nav" id="app-nav">
+		<a href="" id="nav-sections" class="save"><i class="fa fa-columns"></i>Section</a>
+		<a href="" id="nav-content" class=""><i class="fa fa-edit"></i>Content</a>
+		<a href="" id="nav-content" class="add-content"><i class="fa fa-edit"></i>Add Content</a>
+		<a href="" id="nav-content" class="add-content-list"><i class="fa fa-edit"></i>Add List</a>
+		<a href="" id="nav-code" class=""><i class="fa fa-eye"></i>Media</a>
+		<a href="" id="nav-code" class=""><i class="fa fa-magic"></i>Theme</a>
+		<a href="" id="nav-code" class=""><i class="fa fa-eye"></i>Background</a>
+		<a href="" id="nav-code" class=""><i class="fa fa-play"></i>Animation</a>
+	</nav>
+</div>
+{% endblock %}
+
+{% block footerscript %}
+{{ parent() }}
+
+<script>
+	$(function() {
+		
+	});
+</script>
+{% endblock %}

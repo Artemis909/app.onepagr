@@ -1,0 +1,26 @@
+parameters:
+#    onepagr_user.example.class: Onepagr\UserBundle\Example
+
+services:
+#    onepagr_user.example:
+#        class: %onepagr_user.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+    ideallio_user.user_manager:
+        class: %nedwave_user.user_manager.class%
+        arguments: [%nedwave_user.user_class%, @doctrine.orm.entity_manager, @security.encoder_factory]
+    
+    ideallio_user.user_provider:
+        class: %nedwave_user.user_provider.class%
+        arguments: [@nedwave_user.user_manager]
+    
+    ideallio_user.form.change_password:
+        class: Nedwave\UserBundle\Form\ChangePasswordType
+        arguments: [%nedwave_user.user_class%]
+        tags:
+            - { name: form.type, alias: nedwave_user_change_password }
+    
+    ideallio_user.form.registration:
+        class: Onepagr\UserBundle\Form\RegistrationType
+        arguments: [%nedwave_user.user_class%]
+        tags:
+            - { name: form.type, alias: ideallio_user_registration }

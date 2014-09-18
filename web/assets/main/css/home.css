@@ -1,0 +1,250 @@
+/*
+ * http://github.com/peteboere/css-crush (v2.2.0-beta)
+ */
+@import 'http://fonts.googleapis.com/css?family=Pacifico';
+@import 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700';
+body {
+    width: 100%;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+	color: #3c4043;
+	font-size: 1.3rem;
+}
+html,
+body {
+    height: 100%
+}
+
+
+.header h1 {
+	font-weight: 800;
+	font-size: 5.4rem;
+	letter-spacing: -2px;
+}
+.header a { 
+	color: #fff;
+}
+
+.header .sign-in {
+height: 31px;
+min-width: 66px;
+padding: 5px 5px;
+border: 1px solid #7d878a;
+color: #7d878a;
+font-size: 12px;
+text-align: center;
+background: transparent;
+-webkit-transition: all 0.1s linear;
+-moz-transition: all 0.1s linear;
+transition: all 0.1s linear;
+}
+
+.header .sign-in:hover { 
+	background: transparent;
+}
+
+@media (max-width: 630px) {
+	.header h1 {
+		font-size: 5.4rem;
+	}
+}
+@media (max-width: 530px) {
+	.header h1 {
+		font-size: 4.4rem;
+	}
+}
+@media (max-width: 480px) {
+	.header h1 {
+		font-size: 3.5em;
+		letter-spacing: 0;
+	}
+}
+
+@media(max-width: 400px) {
+	.header h1 {
+		font-size: 3rem;
+	}
+}
+
+
+.navbar-toggle {
+position: relative;
+float: right;
+padding: 9px 10px;
+margin-top: 8px;
+margin-right: 15px;
+margin-bottom: 8px;
+background-color: transparent;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+}
+
+.top-nav {
+	padding: 15px 10px 0px 10px;
+}
+
+.navbar-toggle .icon-bar {
+background-color: #fff;
+}
+
+.navbar-toggle .icon-bar {
+display: block;
+width: 22px;
+height: 2px;
+border-radius: 1px;
+}
+
+.navbar-brand {
+	font-family: "Pacifico", cursive;
+}
+
+.header .form-inline .form-control, .header .form-inline button {
+	width: 100%;
+}
+.header .form-inline input, .header .form-inline button {
+	height: 40px;
+	border-radius: 0px;
+}
+
+#registration-form .box {
+	padding-left: 2px;
+	padding-right: 2px;
+	margin-bottom: 6px;
+}
+/** sections and 3 layers **/
+.section-full-height {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.section-full-height .full-height {
+	position: absolute;
+	top: 0;
+	left: 0;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+.section-full-height .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+.section-full-height .layer3 {
+	z-index: -5;
+	background-size: cover;
+	background: url('../../../media/background/svg/mockups.svg') 50% 50% no-repeat;
+	background-repeat: no-repeat;
+}
+
+.header {
+	color: #fff;
+}
+.section-full-height .layer2 {
+	z-index: -4;
+	background-color: #242d35;
+	/**
+background-image: -webkit-linear-gradient(45deg, #242d35 0%, #85a1bb 100%);
+background-image: -o-linear-gradient(45deg, #242d35 0%, #85a1bb 100%);
+background-image: linear-gradient(45deg, #242d35 0%, #85a1bb 100%);**/
+
+
+
+
+}
+
+
+
+.section-full-height .layer1 {
+	z-index: 1;
+
+}
+
+/** end sections and 3 layers **/
+
+/** registration-form **/
+
+
+
+
+/** end registration-form **/
+.padding-top {
+	padding-top: 5em;
+}
+
+#op-header-gradient {
+    z-index: -1;
+    opacity: .85;
+    background-size: cover;
+    background-color: #2C82C9;
+    z-index: -1
+}
+#op-header-bg {
+    background-size: cover;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    height: 100%
+}
+#op-header div.row {
+    padding-right: 0
+}
+.section-title {
+    margin-top: 100px
+}
+ul.footer {
+    list-style: none;
+    margin-left: 0
+}
+ul.footer li a {
+    font-size: 90%;
+    color: rgba(255, 255, 255, .65);
+    display: inline-block
+}
+ul.footer li a:hover {
+    color: #fff
+}
+ul.footer li {
+    list-style: none;
+    margin-right: 15px;
+    display: inline
+}
+.op-profile {
+    background-size: cover;
+    height: 100%;
+    background-image: url(../img/mockups.svg)
+}
+.op-bg-2 {
+    background-color: transparent
+}
+#op-header .content {
+    padding: 20px;
+    padding-top: 10%
+}
+p.op-text1 {
+    font-size: 100%;
+    font-weight: 100;
+    font-style: italic;
+    margin: 0
+}
+h1.op-text2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 200%
+}
+h1.op-text3 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 300%
+}

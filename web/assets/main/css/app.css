@@ -1,0 +1,233 @@
+/*
+ * http://github.com/peteboere/css-crush (v2.2.0-beta)
+ */
+@import 'https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic|Raleway:800,300,200';
+@import 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700';
+body {
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+	color: #fff 
+}
+html,
+body {
+    height: 100%
+}
+
+/** sections and 3 layers **/
+.section-full-height {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+.section-full-height .full-height {
+	position: absolute;
+top: 0;
+left: 0;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+.section-full-height .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+.section-full-height .layer3 {
+	z-index: -5;
+	background-size: cover;
+	background: url('../../../media/background/svg/mockups.svg') 50% 50% no-repeat;
+	background-repeat: no-repeat;
+
+}
+
+
+.section-full-height .layer2 {
+	z-index: -4;
+	
+
+	
+}
+
+.background-gradient-1 {
+	opacity: .95;
+	background-image: -moz-linear-gradient(bottom, #ebf5f9 0%, #fff 100%);
+	background-image: -webkit-linear-gradient(bottom, #ebf5f9 0%, #fff 100%);
+	background-image: -o-linear-gradient(bottom, #ebf5f9 0%, #fff 100%);
+	background-image: linear-gradient(bottom, #ebf5f9 0%, #fff 100%);
+	box-shadow: 2px 0px 4px 0px #000000;
+}
+.background-gradient-2 {
+	opacity: 0.85;
+	background-image: -moz-linear-gradient(top, #00a5d5 0%, #00bc95 100%);
+	background-image: -webkit-linear-gradient(top, #00a5d5 0%, #00bc95 100%);
+	background-image: -o-linear-gradient(top, #00a5d5 0%, #00bc95 100%);
+	background-image: linear-gradient(top, #00a5d5 0%, #00bc95 100%);
+}
+
+.section-full-height .layer1 {
+	z-index: 1;
+}
+
+/** end sections and 3 layers **/
+
+/** registration-form **/
+
+
+#registration-form form {
+	margin-top: 1em;
+}
+
+#registration-form form input {
+	background: rgba(255,255,255,0.4);
+	border: 2px solid rgba(255,255,255,0.8);
+	-webkit-border-radius: 5p;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 5px;
+	-moz-background-clip: padding;
+	border-radius: 5px;
+	background-clip: padding-box;
+	padding: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	color: black !important;
+}
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:rgba(0,0,0,0.5) !important}input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder{color:#36474c !important}
+#registration-form form button[type=submit] {
+	background: rgba(255,255,255,0.4);
+	border: 2px solid #ffffff;
+	-webkit-border-radius: 5px;
+	-webkit-background-clip: padding-box;
+	-moz-border-radius: 5px;
+	-moz-background-clip: padding;
+	border-radius: 5px;
+	background-clip: padding-box;
+	padding: 16px 30px;
+	border: 2px solid #f1f6f9;
+	background-image: -moz-linear-gradient(bottom, #ebf5f9 0%, #fff 100%);
+	background-image: -webkit-linear-gradient(bottom, #ebf5f9 0%, #fff 100%);
+	background-image: -o-linear-gradient(bottom, #ebf5f9 0%, #fff 100%);
+	background-image: linear-gradient(bottom, #ebf5f9 0%, #fff 100%);
+	cursor: pointer !important;
+	font-size: 16px;
+	font-weight: 500;
+	color: #36474c;
+	-webkit-appearance: none;
+	text-transform: uppercase;
+
+}
+
+/** end registration-form **/
+.padding-top {
+	padding-top: 5em;
+}
+
+#op-header-gradient {
+    z-index: -1;
+    opacity: .85;
+    background-size: cover;
+    background-color: #2C82C9;
+    z-index: -1
+}
+#op-header-bg {
+    background-size: cover;
+    left: 0;
+    right: 0;
+    z-index: -2;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    height: 100%
+}
+#op-header div.row {
+    padding-right: 0
+}
+.section-title {
+    margin-top: 100px
+}
+ul.footer {
+    list-style: none;
+    margin-left: 0
+}
+ul.footer li a {
+    font-size: 90%;
+    color: rgba(255, 255, 255, .65);
+    display: inline-block
+}
+ul.footer li a:hover {
+    color: #fff
+}
+ul.footer li {
+    list-style: none;
+    margin-right: 15px;
+    display: inline
+}
+.op-profile {
+    background-size: cover;
+    height: 100%;
+    background-image: url(../img/mockups.svg)
+}
+.op-bg-2 {
+    background-color: transparent
+}
+#op-header .content {
+    padding: 20px;
+    padding-top: 10%
+}
+p.op-text1 {
+    font-size: 100%;
+    font-weight: 100;
+    font-style: italic;
+    margin: 0
+}
+h1.op-text2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 200%
+}
+h1.op-text3 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 300%
+}
+.subscribe-form input {
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 0
+}
+.subscribe-form input:focus {
+    border-color: #2C82C9
+}
+.subscribe-form input[type="button"],
+.subscribe-form input[type="submit"],
+.subscribe-form button[type="button"],
+.subscribe-form button[type="submit"] {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition-property: background;
+    -moz-transition-property: background;
+    -o-transition-property: background;
+    transition-property: background;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+    background: transparent;
+    color: #fff;
+    text-shadow: none;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    height: 34px;
+    border: 1px solid;
+    border-color: #fff;
+    border-radius: 0
+}

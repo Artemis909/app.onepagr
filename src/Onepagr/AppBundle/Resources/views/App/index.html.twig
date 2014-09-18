@@ -1,0 +1,75 @@
+{% extends 'OnepagrAppBundle::layout.html.twig' %}
+{% block body %}
+<section id="header" class="section section-full-height header">
+	<div class="layer  layer3"></div>
+	<div class="layer layer2 background-gradient-2">
+	</div>
+	<div class="layer container layer1">
+		<div class="row-fluid top-nav">
+			
+			<div class="navbar-header">
+      <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../" class="navbar-brand">Onepagr</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+       <!--
+		<ul class="nav navbar-nav">
+		 
+        <li>
+          <a href="#">Link</a>
+        </li>
+        </li>
+      </ul>
+	   -->
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+			<a class="sign-in" href="{{ path('onepagr_login')}}" onclick="ga('send', 'event', 'Navbar', 'Top Links', 'Sign In');">SIGN IN</a>
+		
+		</li>
+      </ul>
+    </nav>
+		</div>
+		<div class="row">
+			<div class="col-md-12 padding-top text-center">
+                <h1 class="wow fadeInLeft animated" data-wow-delay="0.3s" style="">Build A Beautiful Web With Simplicity</h1>
+                <p id="beta-invite" class="wow fadeIn animated" data-wow-delay="1s" style="">
+					Onepagr is the top drag-and-drop one page website builder for designing
+					professional websites without code.
+                </p>		
+			</div>
+			
+			<div class="col-sm-10 padding-top center-block text-center" id="registration-form">
+				<form role="form" action="{{ path('onepagr_user_register') }}" class="form-inline" method="post" {{ form_enctype(form) }} >
+
+					<div class="col-sm-3 box col-sm-offset-2">
+						<input type="email" class="form-control input-large" name="{{ form.email.vars.full_name }}" placeholder="Your Email Address">
+					</div>
+
+					<div class="col-sm-3 box">
+						<input type="password" class="form-control" id="password" name="{{ form.password.vars.full_name }}" placeholder="Create Password">
+					</div>
+					<div class="col-sm-3 box">
+						<button type="submit" class="btn btn-success">Get Started, It's Free</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+{% endblock %}
+
+{% block footerscript %}
+{{ parent() }}
+
+<script>
+	$(function() {
+
+	});
+</script>
+{% endblock %}

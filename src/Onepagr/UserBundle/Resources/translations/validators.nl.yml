@@ -1,0 +1,15 @@
+nedwave_user:
+    name:
+        blank: Vul een naam in
+
+    email:
+        blank: Vul een e-mailadres in
+        invalid: Het e-mailadres {{ value }} is niet geldig
+        already_used: Het e-mailadres is al in gebruik
+    
+    password:
+        blank: Vul een wachtwoord in
+        invalid: Wachtwoorden komen niet overeen
+        length:
+            min: Uw wachtwoord dient minimaal {{ limit }} karakters lang te zijn
+            max: Uw wachtwoord mag niet langer dan {{ limit }} karakters zijn

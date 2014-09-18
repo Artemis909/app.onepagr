@@ -1,0 +1,15 @@
+nedwave_user:
+    name:
+        blank: Please enter a name
+
+    email:
+        blank: Please enter a email
+        invalid: The email {{ value }} is not a valid email
+        already_used: The email is already registrated
+    
+    password:
+        blank: Please enter a password
+        invalid: The password fields do not match
+        length:
+            min: Your password must be at least {{ limit }} characters length
+            max: Your password cannot be longer than {{ limit }} characters length

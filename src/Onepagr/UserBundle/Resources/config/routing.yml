@@ -1,0 +1,16 @@
+onepagr_user_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: OnepagrUserBundle:Default:index }
+onepagr_user_register:
+    path:     /register
+    defaults: { _controller: OnepagrUserBundle:Registration:Register }
+onepagr_login:
+    path:     /login
+    defaults: { _controller: OnepagrUserBundle:Security:Login }
+onepagr_login_check:
+    pattern: /login_check
+onepagr_logout:
+    pattern: /logout
+onepagr_user_user:
+    resource: "@OnepagrUserBundle/Resources/config/routing/user.yml"
+    prefix:   /users

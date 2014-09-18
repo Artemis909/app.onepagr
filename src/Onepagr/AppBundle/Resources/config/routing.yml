@@ -1,0 +1,15 @@
+onepagr_app_homepage:
+    path:     /
+    defaults: { _controller: OnepagrAppBundle:App:index }
+    
+onepagr_app_dashboard:
+    path:     /dashboard
+    defaults: { _controller: OnepagrAppBundle:App:dashboard }
+
+onepagr_app_templates:
+    path:     /templates
+    defaults: { _controller: OnepagrAppBundle:App:templates }
+    
+onepagr_app_content:
+    path:     /content
+    defaults: { _controller: OnepagrAppBundle:App:content }

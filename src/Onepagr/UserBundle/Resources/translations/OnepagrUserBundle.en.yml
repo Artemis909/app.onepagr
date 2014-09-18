@@ -1,0 +1,49 @@
+"Bad credentials": Invalid email or password
+"User account is disabled.": User account is not verified, check your email.
+
+security:
+    login:
+        title: Login
+        username: Email
+        password: Password
+        remember_me: Remember me
+        submit: Login
+
+registration:
+    register:
+        title: Register
+        submit: Register
+        success: An email with a verification link is sent to your email
+        
+    confirm:
+        title: Verify your email
+        token_not_found: Your activation token is not found
+        success: Your account is successfully activated
+
+password:
+    change:
+        title: Change password
+        submit: Change password
+        success: Your password has been successfully updated
+        
+    reset:
+        title: Reset your password
+        submit: Reset your password
+        success: Your password has been successfully reset
+        token_not_found: Your reset token is not found
+        token_is_expired: Your reset token is expired
+    
+    request:
+        title: Request new password
+        submit: Request new password
+        success: A password reset link is sent to your email
+        email_not_found: Email is not found
+
+form:
+    name: Name
+    email: Email
+    password:
+        first: Password
+        second: Confirm Password
+        first_new: New Password
+        second_new: Confirm New Password

@@ -1,0 +1,49 @@
+"Bad credentials": Uw e-mailadres of wachtwoord is onjuist
+"User account is disabled.": Uw account is nog niet geactiveerd, controleer uw e-mail voor de verificatielink
+
+security:
+    login:
+        title: Inloggen
+        username: E-mail
+        password: Wachtwoord
+        remember_me: Onthoud mij
+        submit: Inloggen
+
+registration:
+    register:
+        title: Registreren
+        submit: Registreren
+        success: Een e-mail met een verificatielink is naar uw e-mailadres gestuurd
+        
+    confirm:
+        title: Verifieer uw e-mail
+        token_not_found: Uw activatie code is niet gevonden, mogelijk is uw e-mail al geverifieerd
+        success: Uw account is succesvol geactiveerd
+
+password:
+    change:
+        title: Wachtwoord aanpassen
+        submit: Wachtwoord aanpassen
+        success: Uw wachtwoord is succesvol aangepast
+        
+    reset:
+        title: Herstel uw wachtwoord
+        submit: Herstel uw wachtwoord
+        success: Uw wachtwoord is succesvol aangepast
+        token_not_found: Uw reset code is niet gevonden, vraag deze opnieuw aan
+        token_is_expired: Uw reset code is verlopen, vraag deze opnieuw aan
+    
+    request:
+        title: Wachtwoord vergeten
+        submit: Versturen
+        success: Een wachtwoord reset link is naar uw e-mailadres gestuurd
+        email_not_found: Het opgegeven e-mailadres is niet gevonden
+
+form:
+    name: Naam
+    email: E-mail
+    password:
+        first: Wachtwoord
+        second: Bevestig wachtwoord
+        first_new: Nieuw wachtwoord
+        second_new: Bevestig nieuw wachtwoord

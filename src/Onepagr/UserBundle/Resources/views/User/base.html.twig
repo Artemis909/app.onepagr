@@ -1,0 +1,23 @@
+{% extends 'OnepagrUserBundle::layout.html.twig' %}
+{% block body %}
+<section id="header" class="section section-full-height">
+	<div class="layer  layer3"></div>
+	<div class="layer layer2 background-color-1">
+	</div>
+	<div class="layer container-fluid layer1">
+		{% block form %}
+		{% endblock %}
+	</div>
+</section>
+
+{% endblock %}
+
+{% block footerscript %}
+{{ parent() }}
+
+<script>
+	$(function() {
+
+	});
+</script>
+{% endblock %}
